@@ -1,0 +1,28 @@
+18:33:59 **** Build of configuration Debug for project microblaze-1 ****
+make all 
+Building file: ../src/MicroBlazei1.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/MicroBlazei1.o" -I../../microblaze-1_bsp/microblaze_i1/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/MicroBlazei1.d" -MT"src/MicroBlazei1.o" -o "src/MicroBlazei1.o" "../src/MicroBlazei1.c"
+../src/MicroBlazei1.c: In function 'main':
+../src/MicroBlazei1.c:43:6: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+      if(xmutex_status = 0)
+      ^~
+../src/MicroBlazei1.c:45:73: warning: passing argument 3 of 'XMutex_GetUser' from incompatible pointer type [-Wincompatible-pointer-types]
+   xmutex_status = XMutex_GetUser(&XMutex[1],XPAR_MUTEX_0_IF_1_NUM_MUTEX,&i);
+                                                                         ^
+In file included from ../src/MicroBlazei1.c:6:0:
+../../microblaze-1_bsp/microblaze_i1/include/xmutex.h:177:5: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 'int *'
+ int XMutex_GetUser(XMutex *InstancePtr, u8 MutexNumber, u32 *User);
+     ^~~~~~~~~~~~~~
+Finished building: ../src/MicroBlazei1.c
+ 
+Building target: microblaze-1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../microblaze-1_bsp/microblaze_i1/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "microblaze-1.elf"  ./src/MicroBlazei1.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+/home/Xilinx/SDK/2017.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/6.2.0/../../../../microblaze-xilinx-elf/bin/ld: microblaze-1.elf section `.rodata' will not fit in region `microblaze_0_local_memory1_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory1_dlmb_bram_if_cntlr_Mem'
+/home/Xilinx/SDK/2017.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/6.2.0/../../../../microblaze-xilinx-elf/bin/ld: region `microblaze_0_local_memory1_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory1_dlmb_bram_if_cntlr_Mem' overflowed by 4832 bytes
+collect2: error: ld returned 1 exit status
+make: *** [microblaze-1.elf] エラー 1
+
+18:33:59 Build Finished (took 110ms)
+

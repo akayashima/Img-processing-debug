@@ -1,0 +1,185 @@
+18:20:33 **** Clean-only build of configuration Debug for project MicroBlazei0 ****
+make clean 
+rm -rf  ./src/MicroBlazei0.o ./src/smooth.o  ./src/MicroBlazei0.d ./src/smooth.d  MicroBlazei0.elf.size  MicroBlazei0.elf
+ 
+18:20:33 **** Clean-only build of project MicroBlazei0_bsp ****
+make -k clean 
+make -C microblaze_i0/libsrc/cpu_v2_6/src -s clean 
+make -C microblaze_i0/libsrc/standalone_v6_5/src -s clean 
+make -C microblaze_i0/libsrc/uartlite_v3_2/src -s clean 
+make -C microblaze_i0/libsrc/mutex_v4_3/src -s clean 
+make -C microblaze_i0/libsrc/bram_v4_2/src -s clean 
+make -C microblaze_i0/libsrc/gpio_v4_3/src -s clean 
+make -C microblaze_i0/libsrc/intc_v3_7/src -s clean 
+make -C microblaze_i0/libsrc/tmrctr_v4_4/src -s clean 
+rm -f microblaze_i0/lib/libxil.a
+18:20:34 **** Build of project MicroBlazei0_bsp ****
+make -k all 
+Running Make include in microblaze_i0/libsrc/cpu_v2_6/src
+make -C microblaze_i0/libsrc/cpu_v2_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_i0/libsrc/standalone_v6_5/src
+make -C microblaze_i0/libsrc/standalone_v6_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_i0/libsrc/uartlite_v3_2/src
+make -C microblaze_i0/libsrc/uartlite_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_i0/libsrc/mutex_v4_3/src
+make -C microblaze_i0/libsrc/mutex_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_i0/libsrc/bram_v4_2/src
+make -C microblaze_i0/libsrc/bram_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_i0/libsrc/gpio_v4_3/src
+make -C microblaze_i0/libsrc/gpio_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_i0/libsrc/intc_v3_7/src
+make -C microblaze_i0/libsrc/intc_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_i0/libsrc/tmrctr_v4_4/src
+make -C microblaze_i0/libsrc/tmrctr_v4_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make libs in microblaze_i0/libsrc/cpu_v2_6/src
+make -C microblaze_i0/libsrc/cpu_v2_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling cpu
+mb-ar: creating ../../../lib/libxil.a
+Running Make libs in microblaze_i0/libsrc/standalone_v6_5/src
+make -C microblaze_i0/libsrc/standalone_v6_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling standalone
+Running Make libs in microblaze_i0/libsrc/uartlite_v3_2/src
+make -C microblaze_i0/libsrc/uartlite_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartlite
+Running Make libs in microblaze_i0/libsrc/mutex_v4_3/src
+make -C microblaze_i0/libsrc/mutex_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling mutex
+Running Make libs in microblaze_i0/libsrc/bram_v4_2/src
+make -C microblaze_i0/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bram
+Running Make libs in microblaze_i0/libsrc/gpio_v4_3/src
+make -C microblaze_i0/libsrc/gpio_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling gpio
+Running Make libs in microblaze_i0/libsrc/intc_v3_7/src
+make -C microblaze_i0/libsrc/intc_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling intc
+Running Make libs in microblaze_i0/libsrc/tmrctr_v4_4/src
+make -C microblaze_i0/libsrc/tmrctr_v4_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling tmrctr
+Finished building libraries
+18:20:35 **** Build of configuration Debug for project MicroBlazei0 ****
+make all 
+Building file: ../src/MicroBlazei0.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/MicroBlazei0.o" -I../../MicroBlazei0_bsp/microblaze_i0/include -mlittle-endian -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/MicroBlazei0.d" -MT"src/MicroBlazei0.o" -o "src/MicroBlazei0.o" "../src/MicroBlazei0.c"
+../src/MicroBlazei0.c: In function 'checkTimer':
+../src/MicroBlazei0.c:27:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+   sleep(2);
+   ^~~~~
+../src/MicroBlazei0.c:6:10: warning: unused variable 't1' [-Wunused-variable]
+  u64 t0, t1;
+          ^~
+../src/MicroBlazei0.c:6:6: warning: unused variable 't0' [-Wunused-variable]
+  u64 t0, t1;
+      ^~
+../src/MicroBlazei0.c: In function 'Smooth':
+../src/MicroBlazei0.c:127:22: warning: unused variable 'user_l' [-Wunused-variable]
+  u32 user_i, user_j, user_l;
+                      ^~~~~~
+../src/MicroBlazei0.c:127:14: warning: unused variable 'user_j' [-Wunused-variable]
+  u32 user_i, user_j, user_l;
+              ^~~~~~
+../src/MicroBlazei0.c:127:6: warning: unused variable 'user_i' [-Wunused-variable]
+  u32 user_i, user_j, user_l;
+      ^~~~~~
+../src/MicroBlazei0.c:126:6: warning: unused variable 'start_once' [-Wunused-variable]
+  int start_once=1;
+      ^~~~~~~~~~
+../src/MicroBlazei0.c: In function 'incrFilterComplete':
+../src/MicroBlazei0.c:322:22: warning: unused variable 'user_n' [-Wunused-variable]
+  u32 user_i, user_j, user_n;
+                      ^~~~~~
+../src/MicroBlazei0.c:322:14: warning: unused variable 'user_j' [-Wunused-variable]
+  u32 user_i, user_j, user_n;
+              ^~~~~~
+../src/MicroBlazei0.c:322:6: warning: unused variable 'user_i' [-Wunused-variable]
+  u32 user_i, user_j, user_n;
+      ^~~~~~
+../src/MicroBlazei0.c: In function 'init':
+../src/MicroBlazei0.c:487:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+../src/MicroBlazei0.c:486:6: warning: unused variable 'reg' [-Wunused-variable]
+  u32 reg[6];
+      ^~~
+../src/MicroBlazei0.c: In function 'Show_Time':
+../src/MicroBlazei0.c:543:35: warning: variable 'tStart_hi' set but not used [-Wunused-but-set-variable]
+  u32 tEnd_lo, tEnd_hi, tStart_lo, tStart_hi, tTh_lo, tTh_hi;
+                                   ^~~~~~~~~
+../src/MicroBlazei0.c:543:24: warning: variable 'tStart_lo' set but not used [-Wunused-but-set-variable]
+  u32 tEnd_lo, tEnd_hi, tStart_lo, tStart_hi, tTh_lo, tTh_hi;
+                        ^~~~~~~~~
+../src/MicroBlazei0.c:543:15: warning: variable 'tEnd_hi' set but not used [-Wunused-but-set-variable]
+  u32 tEnd_lo, tEnd_hi, tStart_lo, tStart_hi, tTh_lo, tTh_hi;
+               ^~~~~~~
+../src/MicroBlazei0.c:543:6: warning: variable 'tEnd_lo' set but not used [-Wunused-but-set-variable]
+  u32 tEnd_lo, tEnd_hi, tStart_lo, tStart_hi, tTh_lo, tTh_hi;
+      ^~~~~~~
+../src/MicroBlazei0.c: In function 'myprintf':
+../src/MicroBlazei0.c:740:15: warning: unused variable 'width' [-Wunused-variable]
+  int zeroflag,width;
+               ^~~~~
+../src/MicroBlazei0.c:740:6: warning: unused variable 'zeroflag' [-Wunused-variable]
+  int zeroflag,width;
+      ^~~~~~~~
+../src/MicroBlazei0.c:739:6: warning: variable 'size' set but not used [-Wunused-but-set-variable]
+  int size;
+      ^~~~
+../src/MicroBlazei0.c:738:6: warning: variable 'len' set but not used [-Wunused-but-set-variable]
+  int len;
+      ^~~
+../src/MicroBlazei0.c: In function 'vmyprintf':
+../src/MicroBlazei0.c:810:10: warning: multi-character character constant [-Wmultichar]
+  *buff = '¥0';  /* 終端を入れる */
+          ^~~~~
+../src/MicroBlazei0.c:810:10: warning: overflow in implicit constant conversion [-Woverflow]
+../src/MicroBlazei0.c: In function 'myprintf':
+../src/MicroBlazei0.c:754:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/MicroBlazei0.c
+ 
+Building file: ../src/smooth.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/smooth.o" -I../../MicroBlazei0_bsp/microblaze_i0/include -mlittle-endian -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/smooth.d" -MT"src/smooth.o" -o "src/smooth.o" "../src/smooth.c"
+Finished building: ../src/smooth.c
+ 
+Building target: MicroBlazei0.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroBlazei0_bsp/microblaze_i0/lib -mlittle-endian -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "MicroBlazei0.elf"  ./src/MicroBlazei0.o ./src/smooth.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/smooth.o:(.data.dram+0x0): multiple definition of `dram'
+./src/MicroBlazei0.o:(.data.dram+0x0): first defined here
+./src/smooth.o:(.data.totaltime+0x0): multiple definition of `totaltime'
+./src/MicroBlazei0.o:/home/akayashima/H31_Xilinx/Img-processing-sim/Multiple-Core.sdk/MicroBlazei0/Debug/../src/MicroBlazei0.c:125: first defined here
+./src/smooth.o:(.data.OriginalPicPtr+0x0): multiple definition of `OriginalPicPtr'
+./src/MicroBlazei0.o:/home/akayashima/H31_Xilinx/Img-processing-sim/Multiple-Core.sdk/MicroBlazei0/Debug/../src/MicroBlazei0.c:125: first defined here
+./src/smooth.o:(.data.dramPtr+0x0): multiple definition of `dramPtr'
+./src/MicroBlazei0.o:/home/akayashima/H31_Xilinx/Img-processing-sim/Multiple-Core.sdk/MicroBlazei0/Debug/../src/MicroBlazei0.c:125: first defined here
+./src/smooth.o:(.data.inIMG+0x0): multiple definition of `inIMG'
+./src/MicroBlazei0.o:/home/akayashima/H31_Xilinx/Img-processing-sim/Multiple-Core.sdk/MicroBlazei0/Debug/../src/MicroBlazei0.c:125: first defined here
+./src/smooth.o:(.data.outIMG+0x0): multiple definition of `outIMG'
+./src/MicroBlazei0.o:/home/akayashima/H31_Xilinx/Img-processing-sim/Multiple-Core.sdk/MicroBlazei0/Debug/../src/MicroBlazei0.c:125: first defined here
+./src/smooth.o:(.bss.once+0x0): multiple definition of `once'
+./src/MicroBlazei0.o:/home/akayashima/H31_Xilinx/Img-processing-sim/Multiple-Core.sdk/MicroBlazei0/Debug/../src/MicroBlazei0.c:125: first defined here
+./src/smooth.o:(.bss.Timer_Holding+0x0): multiple definition of `Timer_Holding'
+./src/MicroBlazei0.o:/home/akayashima/H31_Xilinx/Img-processing-sim/Multiple-Core.sdk/MicroBlazei0/Debug/../src/MicroBlazei0.c:125: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [MicroBlazei0.elf] エラー 1
+18:21:13 **** Auto Build of configuration Debug for project MicroBlazei0 ****
+make all 
+Building file: ../src/smooth.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/smooth.o" -I../../MicroBlazei0_bsp/microblaze_i0/include -mlittle-endian -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/smooth.d" -MT"src/smooth.o" -o "src/smooth.o" "../src/smooth.c"
+Finished building: ../src/smooth.c
+ 
+Building target: MicroBlazei0.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroBlazei0_bsp/microblaze_i0/lib -mlittle-endian -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "MicroBlazei0.elf"  ./src/MicroBlazei0.o ./src/smooth.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MicroBlazei0.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size MicroBlazei0.elf  |tee "MicroBlazei0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28092	    432	   3340	  31864	   7c78	MicroBlazei0.elf
+Finished building: MicroBlazei0.elf.size
+ 

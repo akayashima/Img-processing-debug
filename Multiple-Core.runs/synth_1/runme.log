@@ -1,0 +1,709 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/akayashima/H30_Xilinx/NexysVideoDMA_20181101/repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/Xilinx/Vivado/2017.4/data/ip'.
+Command: synth_design -top design_1_wrapper -part xc7a200tsbg484-1 -flatten_hierarchy none -directive RuntimeOptimized -fsm_extraction off
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 24658 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1453.137 ; gain = 84.984 ; free physical = 7588 ; free virtual = 18488
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/imports/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'design_1' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_0' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_gpio_0_0' (1#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_intc_0_0' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_axi_intc_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_intc_0_0' (2#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_axi_intc_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_timer_0_0' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_axi_timer_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_timer_0_0' (3#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_axi_timer_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_timer_0' of module 'design_1_axi_timer_0_0' requires 26 connections, but only 22 given [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:470]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_0' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_uartlite_0_0' (4#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_axi_uartlite_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_uartlite_0' of module 'design_1_axi_uartlite_0_0' requires 22 connections, but only 21 given [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:493]
+INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_0' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_mdm_1_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_mdm_1_0' (5#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_mdm_1_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_intc_0' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_axi_intc_0' (6#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_periph_0' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:1149]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_8RVYHO' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:3385]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_auto_pc_0' (7#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_auto_pc_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_0' requires 56 connections, but only 54 given [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:3608]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_8RVYHO' (8#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:3385]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1UTB3Y5' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:3665]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_1' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_auto_pc_1' (9#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_auto_pc_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_1' requires 56 connections, but only 54 given [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:3888]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_1UTB3Y5' (10#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:3665]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_7ANRHB' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:3945]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_2' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_auto_pc_2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_auto_pc_2' (11#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_auto_pc_2_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_2' requires 56 connections, but only 54 given [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:4168]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_7ANRHB' (12#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:3945]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_1W07O72' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:4225]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_3' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_auto_pc_3_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_auto_pc_3' (13#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_auto_pc_3_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_3' requires 56 connections, but only 54 given [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:4448]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_1W07O72' (14#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:4225]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_5LX7BU' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:4505]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_4' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_auto_pc_4_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_auto_pc_4' (15#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_auto_pc_4_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_4' requires 56 connections, but only 54 given [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:4728]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_5LX7BU' (16#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:4505]
+INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_1XR4ZAZ' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:4785]
+INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_1XR4ZAZ' (17#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:4785]
+INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_4YOIXL' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:5029]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_5' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_auto_pc_5_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_auto_pc_5' (18#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_auto_pc_5_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_5' requires 56 connections, but only 54 given [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:5252]
+INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_4YOIXL' (19#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:5029]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1RZP34U' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:5777]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_6' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_auto_pc_6_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_auto_pc_6' (20#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_auto_pc_6_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_6' requires 56 connections, but only 54 given [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:6000]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1RZP34U' (21#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:5777]
+INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_2REGHR' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:6057]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_7' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_auto_pc_7_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_auto_pc_7' (22#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_auto_pc_7_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_7' requires 56 connections, but only 54 given [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:6280]
+INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_2REGHR' (23#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:6057]
+INFO: [Synth 8-638] synthesizing module 's02_couplers_imp_1R40M8T' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:6337]
+INFO: [Synth 8-256] done synthesizing module 's02_couplers_imp_1R40M8T' (24#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:6337]
+INFO: [Synth 8-638] synthesizing module 's03_couplers_imp_3DF69O' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:6609]
+INFO: [Synth 8-256] done synthesizing module 's03_couplers_imp_3DF69O' (25#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:6609]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_1' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_xbar_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xbar_1' (26#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_xbar_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_axi_periph_0' (27#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:1149]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:5543]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_dlmb_bram_if_cntlr_0' (28#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_0' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_dlmb_v10_0' (29#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_dlmb_v10_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'dlmb_v10' of module 'design_1_dlmb_v10_0' requires 25 connections, but only 24 given [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:5689]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ilmb_bram_if_cntlr_0' (30#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_0' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ilmb_v10_0' (31#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_ilmb_v10_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'ilmb_v10' of module 'design_1_ilmb_v10_0' requires 25 connections, but only 24 given [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:5735]
+INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_0' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_lmb_bram_0' (32#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_lmb_bram_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'lmb_bram' of module 'design_1_lmb_bram_0' requires 16 connections, but only 14 given [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:5760]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (33#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:5543]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory1_imp_1PSRCR4' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:5309]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_1' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_dlmb_bram_if_cntlr_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_dlmb_bram_if_cntlr_1' (34#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_dlmb_bram_if_cntlr_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_1' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_dlmb_v10_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_dlmb_v10_1' (35#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_dlmb_v10_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'dlmb_v10' of module 'design_1_dlmb_v10_1' requires 25 connections, but only 24 given [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:5455]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_1' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_ilmb_bram_if_cntlr_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ilmb_bram_if_cntlr_1' (36#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_ilmb_bram_if_cntlr_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_1' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_ilmb_v10_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ilmb_v10_1' (37#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_ilmb_v10_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'ilmb_v10' of module 'design_1_ilmb_v10_1' requires 25 connections, but only 24 given [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:5501]
+INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_1' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_lmb_bram_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_lmb_bram_1' (38#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_lmb_bram_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'lmb_bram' of module 'design_1_lmb_bram_1' requires 16 connections, but only 14 given [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:5526]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory1_imp_1PSRCR4' (39#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:5309]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_0' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_0' (40#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_1_0' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_microblaze_1_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_1_0' (41#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_microblaze_1_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_mig_7series_0_1' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_mig_7series_0_1_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'design_1_mig_7series_0_1' (42#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_mig_7series_0_1_stub.v:5]
+WARNING: [Synth 8-350] instance 'mig_7series_0' of module 'design_1_mig_7series_0_1' requires 68 connections, but only 56 given [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:1061]
+INFO: [Synth 8-638] synthesizing module 'design_1_mutex_0_0' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_mutex_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_mutex_0_0' (43#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_mutex_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_1_100M_0' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_rst_clk_wiz_1_100M_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_rst_clk_wiz_1_100M_0' (44#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/realtime/design_1_rst_clk_wiz_1_100M_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_clk_wiz_1_100M' of module 'design_1_rst_clk_wiz_1_100M_0' requires 10 connections, but only 8 given [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:1138]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (45#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (46#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/imports/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-3917] design design_1_wrapper has port led_tri_o[5] driven by constant 0
+WARNING: [Synth 8-3917] design design_1_wrapper has port led_tri_o[4] driven by constant 0
+WARNING: [Synth 8-3917] design design_1_wrapper has port led_tri_o[3] driven by constant 1
+WARNING: [Synth 8-3917] design design_1_wrapper has port led_tri_o[2] driven by constant 1
+WARNING: [Synth 8-3917] design design_1_wrapper has port led_tri_o[1] driven by constant 1
+WARNING: [Synth 8-3917] design design_1_wrapper has port led_tri_o[0] driven by constant 1
+WARNING: [Synth 8-3331] design s03_couplers_imp_3DF69O has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s03_couplers_imp_3DF69O has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s03_couplers_imp_3DF69O has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s03_couplers_imp_3DF69O has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design s02_couplers_imp_1R40M8T has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s02_couplers_imp_1R40M8T has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s02_couplers_imp_1R40M8T has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s02_couplers_imp_1R40M8T has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design s01_couplers_imp_2REGHR has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s01_couplers_imp_2REGHR has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m06_couplers_imp_4YOIXL has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m06_couplers_imp_4YOIXL has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_1W07O72 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_1W07O72 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_7ANRHB has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_7ANRHB has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_8RVYHO has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_8RVYHO has unconnected port M_ARESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1497.676 ; gain = 129.523 ; free physical = 7595 ; free virtual = 18496
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1497.676 ; gain = 129.523 ; free physical = 7597 ; free virtual = 18497
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp30/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp30/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp31/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp31/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp32/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp32/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp33/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/microblaze_i0'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp33/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/microblaze_i0'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp34/design_1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp34/design_1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp35/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp35/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp36/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp36/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp37/design_1_axi_timer_0_0_in_context.xdc] for cell 'design_1_i/axi_timer_0'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp37/design_1_axi_timer_0_0_in_context.xdc] for cell 'design_1_i/axi_timer_0'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp38/design_1_microblaze_1_0_in_context.xdc] for cell 'design_1_i/microblaze_i1'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp38/design_1_microblaze_1_0_in_context.xdc] for cell 'design_1_i/microblaze_i1'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp39/design_1_mutex_0_0_in_context.xdc] for cell 'design_1_i/mutex_0'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp39/design_1_mutex_0_0_in_context.xdc] for cell 'design_1_i/mutex_0'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc] for cell 'design_1_i/mig_7series_0'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc] for cell 'design_1_i/mig_7series_0'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp41/design_1_ilmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory1/dlmb_v10'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp41/design_1_ilmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory1/dlmb_v10'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp42/design_1_ilmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory1/ilmb_v10'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp42/design_1_ilmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory1/ilmb_v10'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp43/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory1/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp43/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory1/dlmb_bram_if_cntlr'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp44/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory1/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp44/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory1/ilmb_bram_if_cntlr'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp45/design_1_lmb_bram_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory1/lmb_bram'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp45/design_1_lmb_bram_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory1/lmb_bram'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp46/design_1_ilmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp46/design_1_ilmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp47/design_1_ilmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp47/design_1_ilmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp48/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp48/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp49/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp49/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp50/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp50/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp51/design_1_axi_intc_0_0_in_context.xdc] for cell 'design_1_i/axi_intc_0'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp51/design_1_axi_intc_0_0_in_context.xdc] for cell 'design_1_i/axi_intc_0'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp52/design_1_auto_pc_4_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m06_couplers/auto_pc'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp52/design_1_auto_pc_4_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m06_couplers/auto_pc'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp53/design_1_auto_pc_4_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m04_couplers/auto_pc'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp53/design_1_auto_pc_4_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m04_couplers/auto_pc'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp54/design_1_auto_pc_4_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m03_couplers/auto_pc'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp54/design_1_auto_pc_4_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m03_couplers/auto_pc'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp55/design_1_auto_pc_4_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m02_couplers/auto_pc'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp55/design_1_auto_pc_4_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m02_couplers/auto_pc'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp56/design_1_auto_pc_4_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m01_couplers/auto_pc'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp56/design_1_auto_pc_4_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m01_couplers/auto_pc'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp57/design_1_auto_pc_4_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m00_couplers/auto_pc'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp57/design_1_auto_pc_4_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m00_couplers/auto_pc'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp58/design_1_auto_pc_5_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/s01_couplers/auto_pc'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp58/design_1_auto_pc_5_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/s01_couplers/auto_pc'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp59/design_1_auto_pc_5_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp59/design_1_auto_pc_5_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc]
+WARNING: [Constraints 18-619] A clock with name 'SYSCLK' already exists, overwriting the previous clock with the same name. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:2]
+WARNING: [Vivado 12-584] No ports matched 'SDATA_I'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'SDATA_I'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'BCLK_O'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'BCLK_O'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'SDATA_O'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'SDATA_O'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'LRCLK_O'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'LRCLK_O'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'MCLK_O'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'MCLK_O'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ADDR[0]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ADDR[1]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ADDR[10]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ADDR[11]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ADDR[12]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ADDR[13]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ADDR[14]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ADDR[2]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ADDR[3]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ADDR[4]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ADDR[5]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ADDR[6]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ADDR[7]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ADDR[8]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ADDR[9]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_BA[0]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_BA[1]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_BA[2]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_CAS'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_CKE[0]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_CLK_N[0]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_CLK_P[0]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DM[0]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DM[1]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[0]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[1]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[10]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[11]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[12]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[13]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[14]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[15]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[2]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[3]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[4]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[5]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[6]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[7]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[8]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[9]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQS_N[0]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQS_P[0]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQS_N[1]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQS_P[1]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ODT'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_RAS'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_RESET'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'DDR3_WE'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'iic_rtl_scl_io'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:617]
+WARNING: [Vivado 12-584] No ports matched 'iic_rtl_scl_io'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:618]
+WARNING: [Vivado 12-584] No ports matched 'iic_rtl_sda_io'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:619]
+WARNING: [Vivado 12-584] No ports matched 'iic_rtl_sda_io'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:620]
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1890.117 ; gain = 0.004 ; free physical = 7240 ; free virtual = 18141
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/microblaze_0_local_memory1/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:47 . Memory (MB): peak = 1890.117 ; gain = 521.965 ; free physical = 7377 ; free virtual = 18278
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:47 . Memory (MB): peak = 1890.117 ; gain = 521.965 ; free physical = 7377 ; free virtual = 18278
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[0]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[0]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[10]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[10]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[11]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[11]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[12]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[12]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[13]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[13]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[14]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[14]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[1]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[1]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[2]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[2]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[3]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[3]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[4]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[4]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[5]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[5]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[6]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[6]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[7]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[7]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[8]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 34).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[8]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[9]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 36).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[9]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_ba[0]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 38).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_ba[0]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_ba[1]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 40).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_ba[1]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_ba[2]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 42).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_ba[2]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_cas_n. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 44).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_cas_n. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_ck_n[0]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 46).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_ck_n[0]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_ck_p[0]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 48).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_ck_p[0]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_cke[0]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 50).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_cke[0]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dm[0]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 52).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dm[0]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dm[1]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 54).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dm[1]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[0]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 56).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[0]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[10]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 58).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[10]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[11]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 60).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[11]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[12]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 62).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[12]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[13]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 64).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[13]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[14]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 66).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[14]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[15]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 68).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[15]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[1]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 70).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[1]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[2]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 72).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[2]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[3]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 74).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[3]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[4]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 76).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[4]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[5]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 78).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[5]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[6]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 80).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[6]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[7]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 82).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[7]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[8]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 84).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[8]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[9]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 86).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[9]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dqs_n[0]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 88).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dqs_n[0]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dqs_n[1]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 90).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dqs_n[1]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dqs_p[0]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 92).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dqs_p[0]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 93).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dqs_p[1]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 94).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dqs_p[1]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 95).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_odt[0]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 96).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_odt[0]. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 97).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_ras_n. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 98).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_ras_n. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 99).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_reset_n. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 100).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_reset_n. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 101).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_we_n. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 102).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_we_n. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 103).
+Applied set_property IO_BUFFER_TYPE = NONE for SYSCLK. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 104).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for SYSCLK. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/.Xil/Vivado-24647-bluewater02/dcp40/design_1_mig_7series_0_1_in_context.xdc, line 105).
+Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_gpio_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_intc_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_timer_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_uartlite_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mdm_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_intc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/m00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/m01_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/m02_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/m03_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/m04_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/m06_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/s01_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory1/dlmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory1/dlmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory1/ilmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory1/ilmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory1/lmb_bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_i0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_i1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mig_7series_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mutex_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:47 . Memory (MB): peak = 1890.117 ; gain = 521.965 ; free physical = 7378 ; free virtual = 18279
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:47 . Memory (MB): peak = 1890.117 ; gain = 521.965 ; free physical = 7370 ; free virtual = 18271
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:47 . Memory (MB): peak = 1890.117 ; gain = 521.965 ; free physical = 7360 ; free virtual = 18261
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mdm_1/Dbg_Clk_0' to pin 'design_1_i/mdm_1/bbstub_Dbg_Clk_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mdm_1/Dbg_Clk_1' to pin 'design_1_i/mdm_1/bbstub_Dbg_Clk_1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mdm_1/Dbg_Update_0' to pin 'design_1_i/mdm_1/bbstub_Dbg_Update_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mdm_1/Dbg_Update_1' to pin 'design_1_i/mdm_1/bbstub_Dbg_Update_1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mig_7series_0/ui_addn_clk_0' to pin 'design_1_i/mig_7series_0/bbstub_ui_addn_clk_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mig_7series_0/ui_addn_clk_1' to pin 'design_1_i/mig_7series_0/bbstub_ui_addn_clk_1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mig_7series_0/ui_addn_clk_2' to pin 'design_1_i/mig_7series_0/bbstub_ui_addn_clk_2/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mig_7series_0/ui_addn_clk_3' to pin 'design_1_i/mig_7series_0/bbstub_ui_addn_clk_3/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mig_7series_0/ui_addn_clk_4' to pin 'design_1_i/mig_7series_0/bbstub_ui_addn_clk_4/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mig_7series_0/ui_clk' to pin 'design_1_i/mig_7series_0/bbstub_ui_clk/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/microblaze_0_local_memory1/dlmb_bram_if_cntlr/BRAM_Clk_A' to pin 'design_1_i/microblaze_0_local_memory1/dlmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/microblaze_0_local_memory1/ilmb_bram_if_cntlr/BRAM_Clk_A' to pin 'design_1_i/microblaze_0_local_memory1/ilmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/BRAM_Clk_A' to pin 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/BRAM_Clk_A' to pin 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+WARNING: [Synth 8-565] redefining clock 'SYSCLK'
+INFO: [Synth 8-5819] Moved 14 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:58 . Memory (MB): peak = 1890.117 ; gain = 521.965 ; free physical = 7240 ; free virtual = 18141
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:58 . Memory (MB): peak = 1890.117 ; gain = 521.965 ; free physical = 7239 ; free virtual = 18140
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:59 . Memory (MB): peak = 1890.117 ; gain = 521.965 ; free physical = 7239 ; free virtual = 18140
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:59 . Memory (MB): peak = 1890.117 ; gain = 521.965 ; free physical = 7239 ; free virtual = 18140
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:59 . Memory (MB): peak = 1890.117 ; gain = 521.965 ; free physical = 7239 ; free virtual = 18140
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------------+----------+
+|      |BlackBox name                    |Instances |
++------+---------------------------------+----------+
+|1     |design_1_auto_pc_0               |         1|
+|2     |design_1_auto_pc_1               |         1|
+|3     |design_1_auto_pc_2               |         1|
+|4     |design_1_auto_pc_3               |         1|
+|5     |design_1_auto_pc_4               |         1|
+|6     |design_1_auto_pc_5               |         1|
+|7     |design_1_auto_pc_6               |         1|
+|8     |design_1_auto_pc_7               |         1|
+|9     |design_1_xbar_1                  |         1|
+|10    |design_1_dlmb_bram_if_cntlr_0    |         1|
+|11    |design_1_dlmb_v10_0              |         1|
+|12    |design_1_ilmb_bram_if_cntlr_0    |         1|
+|13    |design_1_ilmb_v10_0              |         1|
+|14    |design_1_lmb_bram_0              |         1|
+|15    |design_1_dlmb_bram_if_cntlr_1    |         1|
+|16    |design_1_dlmb_v10_1              |         1|
+|17    |design_1_ilmb_bram_if_cntlr_1    |         1|
+|18    |design_1_ilmb_v10_1              |         1|
+|19    |design_1_lmb_bram_1              |         1|
+|20    |design_1_axi_gpio_0_0            |         1|
+|21    |design_1_axi_intc_0_0            |         1|
+|22    |design_1_axi_timer_0_0           |         1|
+|23    |design_1_axi_uartlite_0_0        |         1|
+|24    |design_1_mdm_1_0                 |         1|
+|25    |design_1_microblaze_0_axi_intc_0 |         1|
+|26    |design_1_microblaze_0_0          |         1|
+|27    |design_1_microblaze_1_0          |         1|
+|28    |design_1_mig_7series_0_1         |         1|
+|29    |design_1_mutex_0_0               |         1|
+|30    |design_1_rst_clk_wiz_1_100M_0    |         1|
++------+---------------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------------+------+
+|      |Cell                             |Count |
++------+---------------------------------+------+
+|1     |design_1_auto_pc_0               |     1|
+|2     |design_1_auto_pc_1               |     1|
+|3     |design_1_auto_pc_2               |     1|
+|4     |design_1_auto_pc_3               |     1|
+|5     |design_1_auto_pc_4               |     1|
+|6     |design_1_auto_pc_5               |     1|
+|7     |design_1_auto_pc_6               |     1|
+|8     |design_1_auto_pc_7               |     1|
+|9     |design_1_axi_gpio_0_0            |     1|
+|10    |design_1_axi_intc_0_0            |     1|
+|11    |design_1_axi_timer_0_0           |     1|
+|12    |design_1_axi_uartlite_0_0        |     1|
+|13    |design_1_dlmb_bram_if_cntlr_0    |     1|
+|14    |design_1_dlmb_bram_if_cntlr_1    |     1|
+|15    |design_1_dlmb_v10_0              |     1|
+|16    |design_1_dlmb_v10_1              |     1|
+|17    |design_1_ilmb_bram_if_cntlr_0    |     1|
+|18    |design_1_ilmb_bram_if_cntlr_1    |     1|
+|19    |design_1_ilmb_v10_0              |     1|
+|20    |design_1_ilmb_v10_1              |     1|
+|21    |design_1_lmb_bram_0              |     1|
+|22    |design_1_lmb_bram_1              |     1|
+|23    |design_1_mdm_1_0                 |     1|
+|24    |design_1_microblaze_0_0          |     1|
+|25    |design_1_microblaze_0_axi_intc_0 |     1|
+|26    |design_1_microblaze_1_0          |     1|
+|27    |design_1_mig_7series_0_1         |     1|
+|28    |design_1_mutex_0_0               |     1|
+|29    |design_1_rst_clk_wiz_1_100M_0    |     1|
+|30    |design_1_xbar_1                  |     1|
+|31    |LUT1                             |     1|
+|32    |IBUF                             |     7|
+|33    |OBUF                             |     9|
++------+---------------------------------+------+
+
+Report Instance Areas: 
++------+-------------------------------+---------------------------------------+------+
+|      |Instance                       |Module                                 |Cells |
++------+-------------------------------+---------------------------------------+------+
+|1     |top                            |                                       |  4876|
+|2     |  design_1_i                   |design_1                               |  4859|
+|3     |    microblaze_0_axi_periph    |design_1_microblaze_0_axi_periph_0     |  2660|
+|4     |      m00_couplers             |m00_couplers_imp_8RVYHO                |   153|
+|5     |      m01_couplers             |m01_couplers_imp_1UTB3Y5               |   153|
+|6     |      m02_couplers             |m02_couplers_imp_7ANRHB                |   153|
+|7     |      m03_couplers             |m03_couplers_imp_1W07O72               |   153|
+|8     |      m04_couplers             |m04_couplers_imp_5LX7BU                |   153|
+|9     |      m06_couplers             |m06_couplers_imp_4YOIXL                |   153|
+|10    |      s00_couplers             |s00_couplers_imp_1RZP34U               |   205|
+|11    |      s01_couplers             |s01_couplers_imp_2REGHR                |   205|
+|12    |    microblaze_0_local_memory  |microblaze_0_local_memory_imp_1K0VQXK  |   496|
+|13    |    microblaze_0_local_memory1 |microblaze_0_local_memory1_imp_1PSRCR4 |   496|
++------+-------------------------------+---------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:59 . Memory (MB): peak = 1890.117 ; gain = 521.965 ; free physical = 7239 ; free virtual = 18140
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1890.117 ; gain = 129.523 ; free physical = 7292 ; free virtual = 18193
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:59 . Memory (MB): peak = 1890.117 ; gain = 521.965 ; free physical = 7299 ; free virtual = 18200
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+122 Infos, 119 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:01:01 . Memory (MB): peak = 1890.117 ; gain = 541.078 ; free physical = 7281 ; free virtual = 18182
+INFO: [Common 17-1381] The checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 1890.117 ; gain = 0.000 ; free physical = 7280 ; free virtual = 18181
+INFO: [Common 17-206] Exiting Vivado at Thu Feb  7 17:48:30 2019...

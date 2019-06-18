@@ -1,0 +1,803 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/akayashima/H30_Xilinx/NexysVideoDMA_20181101/repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/Xilinx/Vivado/2017.4/data/ip'.
+Command: link_design -top design_1_wrapper -part xc7a200tsbg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.dcp' for cell 'design_1_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_axi_intc_0_0/design_1_axi_intc_0_0.dcp' for cell 'design_1_i/axi_intc_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0.dcp' for cell 'design_1_i/axi_timer_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.dcp' for cell 'design_1_i/axi_uartlite_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.dcp' for cell 'design_1_i/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.dcp' for cell 'design_1_i/microblaze_0_axi_intc'
+INFO: [Project 1-454] Reading design checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.dcp' for cell 'design_1_i/microblaze_i0'
+INFO: [Project 1-454] Reading design checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_microblaze_1_0/design_1_microblaze_1_0.dcp' for cell 'design_1_i/microblaze_i1'
+INFO: [Project 1-454] Reading design checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_1/design_1_mig_7series_0_1.dcp' for cell 'design_1_i/mig_7series_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_mutex_0_0/design_1_mutex_0_0.dcp' for cell 'design_1_i/mutex_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.dcp' for cell 'design_1_i/rst_clk_wiz_1_100M'
+INFO: [Project 1-454] Reading design checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1.dcp' for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/microblaze_0_axi_periph/m00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1.dcp' for cell 'design_1_i/microblaze_0_axi_periph/m01_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2.dcp' for cell 'design_1_i/microblaze_0_axi_periph/m02_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3.dcp' for cell 'design_1_i/microblaze_0_axi_periph/m03_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_4/design_1_auto_pc_4.dcp' for cell 'design_1_i/microblaze_0_axi_periph/m04_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_5/design_1_auto_pc_5.dcp' for cell 'design_1_i/microblaze_0_axi_periph/m06_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_6/design_1_auto_pc_6.dcp' for cell 'design_1_i/microblaze_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_7/design_1_auto_pc_7.dcp' for cell 'design_1_i/microblaze_0_axi_periph/s01_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0.dcp' for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.dcp' for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0.dcp' for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.dcp' for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0.dcp' for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+INFO: [Project 1-454] Reading design checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_1/design_1_dlmb_bram_if_cntlr_1.dcp' for cell 'design_1_i/microblaze_0_local_memory1/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_1/design_1_dlmb_v10_1.dcp' for cell 'design_1_i/microblaze_0_local_memory1/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_1/design_1_ilmb_bram_if_cntlr_1.dcp' for cell 'design_1_i/microblaze_0_local_memory1/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_1/design_1_ilmb_v10_1.dcp' for cell 'design_1_i/microblaze_0_local_memory1/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_1/design_1_lmb_bram_1.dcp' for cell 'design_1_i/microblaze_0_local_memory1/lmb_bram'
+INFO: [Netlist 29-17] Analyzing 1614 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc] for cell 'design_1_i/mdm_1/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc:50]
+get_clocks: Time (s): cpu = 00:00:12 ; elapsed = 00:00:39 . Memory (MB): peak = 2454.824 ; gain = 559.652 ; free physical = 6700 ; free virtual = 17680
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc] for cell 'design_1_i/mdm_1/U0'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc] for cell 'design_1_i/microblaze_i0/U0'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc] for cell 'design_1_i/microblaze_i0/U0'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.xdc] for cell 'design_1_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.xdc] for cell 'design_1_i/microblaze_0_axi_intc/U0'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_board.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_board.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0.xdc] for cell 'design_1_i/axi_timer_0/U0'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0.xdc] for cell 'design_1_i/axi_timer_0/U0'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_microblaze_1_0/design_1_microblaze_1_0.xdc] for cell 'design_1_i/microblaze_i1/U0'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_microblaze_1_0/design_1_microblaze_1_0.xdc] for cell 'design_1_i/microblaze_i1/U0'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_1/design_1_mig_7series_0_1/user_design/constraints/design_1_mig_7series_0_1.xdc] for cell 'design_1_i/mig_7series_0'
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: design_1_i/mig_7series_0/sys_clk_i). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_1/design_1_mig_7series_0_1/user_design/constraints/design_1_mig_7series_0_1.xdc:40]
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_1/design_1_mig_7series_0_1/user_design/constraints/design_1_mig_7series_0_1.xdc] for cell 'design_1_i/mig_7series_0'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_1/design_1_dlmb_v10_1.xdc] for cell 'design_1_i/microblaze_0_local_memory1/dlmb_v10/U0'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_1/design_1_dlmb_v10_1.xdc] for cell 'design_1_i/microblaze_0_local_memory1/dlmb_v10/U0'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_1/design_1_ilmb_v10_1.xdc] for cell 'design_1_i/microblaze_0_local_memory1/ilmb_v10/U0'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_1/design_1_ilmb_v10_1.xdc] for cell 'design_1_i/microblaze_0_local_memory1/ilmb_v10/U0'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10/U0'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10/U0'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10/U0'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10/U0'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_axi_intc_0_0/design_1_axi_intc_0_0.xdc] for cell 'design_1_i/axi_intc_0/U0'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_axi_intc_0_0/design_1_axi_intc_0_0.xdc] for cell 'design_1_i/axi_intc_0/U0'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc]
+WARNING: [Constraints 18-619] A clock with name 'SYSCLK' already exists, overwriting the previous clock with the same name. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:2]
+WARNING: [Vivado 12-584] No ports matched 'SDATA_I'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SDATA_I'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BCLK_O'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BCLK_O'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SDATA_O'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SDATA_O'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LRCLK_O'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LRCLK_O'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MCLK_O'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MCLK_O'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ADDR[0]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ADDR[1]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ADDR[10]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ADDR[11]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ADDR[12]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ADDR[13]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ADDR[14]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ADDR[2]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ADDR[3]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ADDR[4]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ADDR[5]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ADDR[6]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ADDR[7]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ADDR[8]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ADDR[9]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_BA[0]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_BA[1]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_BA[2]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_CAS'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_CKE[0]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_CLK_N[0]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_CLK_P[0]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DM[0]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DM[1]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[0]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[1]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[10]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[11]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[12]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[13]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[14]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[15]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[2]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[3]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[4]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[5]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[6]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[7]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[8]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQ[9]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQS_N[0]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQS_P[0]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQS_N[1]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_DQS_P[1]'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_ODT'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_RAS'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_RESET'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR3_WE'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iic_rtl_scl_io'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:617]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:617]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iic_rtl_scl_io'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:618]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:618]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iic_rtl_sda_io'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:619]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:619]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iic_rtl_sda_io'. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:620]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc:620]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/constrs_1/imports/constraints/dmaDemo.xdc]
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_clocks.xdc] for cell 'design_1_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_clocks.xdc] for cell 'design_1_i/microblaze_0_axi_intc/U0'
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_axi_intc_0_0/design_1_axi_intc_0_0_clocks.xdc] for cell 'design_1_i/axi_intc_0/U0'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_axi_intc_0_0/design_1_axi_intc_0_0_clocks.xdc] for cell 'design_1_i/axi_intc_0/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'design_1_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/data/mb_bootloop_le.elf /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_microblaze_1_0/data/mb_bootloop_le.elf 
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 567 instances were transformed.
+  IOBUFDS_DIFF_OUT_INTERMDISABLE => IOBUFDS_DIFF_OUT_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT, IBUFDS_INTERMDISABLE_INT, INV, OBUFTDS, OBUFTDS): 2 instances
+  IOBUF_INTERMDISABLE => IOBUF_INTERMDISABLE (IBUF_INTERMDISABLE, OBUFT): 16 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 216 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 64 instances
+  RAM16X1S => RAM32X1S (RAMS32): 41 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 163 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 64 instances
+
+42 Infos, 64 Warnings, 62 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:27 ; elapsed = 00:01:22 . Memory (MB): peak = 2489.512 ; gain = 1139.973 ; free physical = 6800 ; free virtual = 17701
+Command: opt_design -directive RuntimeOptimized
+INFO: [Vivado_Tcl 4-136] Directive used for opt_design is: RuntimeOptimized
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2553.535 ; gain = 64.023 ; free physical = 6796 ; free virtual = 17697
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 6 inverter(s) to 7 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1acb1974a
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 2553.535 ; gain = 0.000 ; free physical = 6792 ; free virtual = 17693
+INFO: [Opt 31-389] Phase Retarget created 219 cells and removed 318 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 4 load pin(s).
+Phase 2 Constant propagation | Checksum: 1d34e9331
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 2553.535 ; gain = 0.000 ; free physical = 6792 ; free virtual = 17693
+INFO: [Opt 31-389] Phase Constant propagation created 526 cells and removed 1479 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1e685d6d0
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2553.535 ; gain = 0.000 ; free physical = 6797 ; free virtual = 17698
+INFO: [Opt 31-389] Phase Sweep created 1 cells and removed 2774 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 1e685d6d0
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2553.535 ; gain = 0.000 ; free physical = 6798 ; free virtual = 17699
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 1e685d6d0
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2553.535 ; gain = 0.000 ; free physical = 6797 ; free virtual = 17698
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2553.535 ; gain = 0.000 ; free physical = 6796 ; free virtual = 17697
+Ending Logic Optimization Task | Checksum: 2469bd116
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 2553.535 ; gain = 0.000 ; free physical = 6796 ; free virtual = 17697
+INFO: [Common 17-83] Releasing license: Implementation
+58 Infos, 64 Warnings, 62 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 2553.535 ; gain = 64.023 ; free physical = 6786 ; free virtual = 17687
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2553.535 ; gain = 0.000 ; free physical = 6781 ; free virtual = 17684
+INFO: [Common 17-1381] The checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 2553.535 ; gain = 0.000 ; free physical = 6776 ; free virtual = 17685
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+Command: report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/impl_1/design_1_wrapper_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design -directive RuntimeOptimized
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'RuntimeOptimized' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2553.535 ; gain = 0.000 ; free physical = 6767 ; free virtual = 17676
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 15fe8625c
+
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2553.535 ; gain = 0.000 ; free physical = 6767 ; free virtual = 17676
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2553.535 ; gain = 0.000 ; free physical = 6771 ; free virtual = 17681
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 14db2c0ed
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2553.535 ; gain = 0.000 ; free physical = 6732 ; free virtual = 17642
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 20b111366
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 2608.586 ; gain = 55.051 ; free physical = 6670 ; free virtual = 17579
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 20b111366
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 2608.586 ; gain = 55.051 ; free physical = 6670 ; free virtual = 17579
+Phase 1 Placer Initialization | Checksum: 20b111366
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 2608.586 ; gain = 55.051 ; free physical = 6670 ; free virtual = 17579
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: f178945e
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:21 . Memory (MB): peak = 2709.129 ; gain = 155.594 ; free physical = 6615 ; free virtual = 17524
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: f178945e
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:21 . Memory (MB): peak = 2709.129 ; gain = 155.594 ; free physical = 6615 ; free virtual = 17524
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: e872591e
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:24 . Memory (MB): peak = 2709.129 ; gain = 155.594 ; free physical = 6611 ; free virtual = 17521
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 135b0d4e0
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:24 . Memory (MB): peak = 2709.129 ; gain = 155.594 ; free physical = 6611 ; free virtual = 17521
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: f9dc7506
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:24 . Memory (MB): peak = 2709.129 ; gain = 155.594 ; free physical = 6611 ; free virtual = 17521
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: f9dc7506
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:24 . Memory (MB): peak = 2709.129 ; gain = 155.594 ; free physical = 6611 ; free virtual = 17521
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: d8de12cf
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:24 . Memory (MB): peak = 2709.129 ; gain = 155.594 ; free physical = 6610 ; free virtual = 17520
+
+Phase 3.7 Small Shape Detail Placement
+Phase 3.7 Small Shape Detail Placement | Checksum: 11acaebf3
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:30 . Memory (MB): peak = 2709.129 ; gain = 155.594 ; free physical = 6591 ; free virtual = 17501
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: 145f3ce56
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:30 . Memory (MB): peak = 2709.129 ; gain = 155.594 ; free physical = 6592 ; free virtual = 17502
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: 145f3ce56
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:30 . Memory (MB): peak = 2709.129 ; gain = 155.594 ; free physical = 6592 ; free virtual = 17502
+
+Phase 3.10 Fast Optimization
+Phase 3.10 Fast Optimization | Checksum: 1ee28b218
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:33 . Memory (MB): peak = 2709.129 ; gain = 155.594 ; free physical = 6596 ; free virtual = 17506
+Phase 3 Detail Placement | Checksum: 1ee28b218
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:33 . Memory (MB): peak = 2709.129 ; gain = 155.594 ; free physical = 6596 ; free virtual = 17506
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1ef321617
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Place 46-33] Processed net design_1_i/microblaze_i0/U0/MicroBlaze_Core_I/sync_reset, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net design_1_i/microblaze_i1/U0/MicroBlaze_Core_I/sync_reset, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-31] BUFG insertion identified 2 candidate nets, 0 success, 2 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1ef321617
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:36 . Memory (MB): peak = 2709.129 ; gain = 155.594 ; free physical = 6601 ; free virtual = 17511
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-3.597. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 2132362ad
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:00:38 . Memory (MB): peak = 2709.129 ; gain = 155.594 ; free physical = 6600 ; free virtual = 17510
+Phase 4.1 Post Commit Optimization | Checksum: 2132362ad
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:00:38 . Memory (MB): peak = 2709.129 ; gain = 155.594 ; free physical = 6600 ; free virtual = 17510
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 2132362ad
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:38 . Memory (MB): peak = 2709.129 ; gain = 155.594 ; free physical = 6603 ; free virtual = 17513
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 2132362ad
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:38 . Memory (MB): peak = 2709.129 ; gain = 155.594 ; free physical = 6603 ; free virtual = 17513
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 22ec79522
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:38 . Memory (MB): peak = 2709.129 ; gain = 155.594 ; free physical = 6603 ; free virtual = 17513
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 22ec79522
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:39 . Memory (MB): peak = 2709.129 ; gain = 155.594 ; free physical = 6603 ; free virtual = 17513
+Ending Placer Task | Checksum: 19af8ebee
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:39 . Memory (MB): peak = 2709.129 ; gain = 155.594 ; free physical = 6656 ; free virtual = 17566
+INFO: [Common 17-83] Releasing license: Implementation
+83 Infos, 64 Warnings, 62 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:24 ; elapsed = 00:00:41 . Memory (MB): peak = 2709.129 ; gain = 155.594 ; free physical = 6656 ; free virtual = 17566
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 2709.129 ; gain = 0.000 ; free physical = 6604 ; free virtual = 17552
+INFO: [Common 17-1381] The checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/impl_1/design_1_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2709.129 ; gain = 0.000 ; free physical = 6640 ; free virtual = 17562
+INFO: [runtcl-4] Executing : report_io -file design_1_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2709.129 ; gain = 0.000 ; free physical = 6630 ; free virtual = 17551
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_placed.rpt -pb design_1_wrapper_utilization_placed.pb
+report_utilization: Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.23 . Memory (MB): peak = 2709.129 ; gain = 0.000 ; free physical = 6641 ; free virtual = 17562
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2709.129 ; gain = 0.000 ; free physical = 6640 ; free virtual = 17562
+Command: route_design -directive RuntimeOptimized
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'RuntimeOptimized'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: ad7f73ca ConstDB: 0 ShapeSum: ed797824 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 1d6caa9a0
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:31 . Memory (MB): peak = 2856.617 ; gain = 140.863 ; free physical = 6414 ; free virtual = 17335
+Post Restoration Checksum: NetGraph: f3db167a NumContArr: e2ef9326 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 1d6caa9a0
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:32 . Memory (MB): peak = 2856.617 ; gain = 140.863 ; free physical = 6416 ; free virtual = 17338
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 1d6caa9a0
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:32 . Memory (MB): peak = 2857.605 ; gain = 141.852 ; free physical = 6377 ; free virtual = 17299
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 1d6caa9a0
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:32 . Memory (MB): peak = 2857.605 ; gain = 141.852 ; free physical = 6377 ; free virtual = 17299
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1e2461cc6
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:36 . Memory (MB): peak = 2918.246 ; gain = 202.492 ; free physical = 6353 ; free virtual = 17275
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.066 | TNS=-293.866| WHS=-0.303 | THS=-413.754|
+
+Phase 2 Router Initialization | Checksum: 1e7be29e3
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:37 . Memory (MB): peak = 2918.246 ; gain = 202.492 ; free physical = 6348 ; free virtual = 17270
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 14e974753
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:40 . Memory (MB): peak = 2918.246 ; gain = 202.492 ; free physical = 6332 ; free virtual = 17253
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 2728
+ Number of Nodes with overlaps = 206
+ Number of Nodes with overlaps = 34
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.669 | TNS=-630.951| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1d02d9d20
+
+Time (s): cpu = 00:02:02 ; elapsed = 00:00:49 . Memory (MB): peak = 2918.246 ; gain = 202.492 ; free physical = 6331 ; free virtual = 17253
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.669 | TNS=-630.868| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 13aa3c4fb
+
+Time (s): cpu = 00:02:05 ; elapsed = 00:00:50 . Memory (MB): peak = 2918.246 ; gain = 202.492 ; free physical = 6333 ; free virtual = 17255
+Phase 4 Rip-up And Reroute | Checksum: 13aa3c4fb
+
+Time (s): cpu = 00:02:05 ; elapsed = 00:00:50 . Memory (MB): peak = 2918.246 ; gain = 202.492 ; free physical = 6333 ; free virtual = 17255
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: a607d0de
+
+Time (s): cpu = 00:02:08 ; elapsed = 00:00:51 . Memory (MB): peak = 2918.246 ; gain = 202.492 ; free physical = 6313 ; free virtual = 17235
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: a607d0de
+
+Time (s): cpu = 00:02:08 ; elapsed = 00:00:51 . Memory (MB): peak = 2918.246 ; gain = 202.492 ; free physical = 6313 ; free virtual = 17235
+Phase 5 Delay and Skew Optimization | Checksum: a607d0de
+
+Time (s): cpu = 00:02:08 ; elapsed = 00:00:51 . Memory (MB): peak = 2918.246 ; gain = 202.492 ; free physical = 6313 ; free virtual = 17235
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 145f1af19
+
+Time (s): cpu = 00:02:11 ; elapsed = 00:00:51 . Memory (MB): peak = 2918.246 ; gain = 202.492 ; free physical = 6313 ; free virtual = 17234
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.571 | TNS=-604.437| WHS=-0.109 | THS=-0.109 |
+
+Phase 6.1 Hold Fix Iter | Checksum: 165abfc21
+
+Time (s): cpu = 00:02:11 ; elapsed = 00:00:52 . Memory (MB): peak = 2918.246 ; gain = 202.492 ; free physical = 6311 ; free virtual = 17233
+Phase 6 Post Hold Fix | Checksum: 1c96d564b
+
+Time (s): cpu = 00:02:11 ; elapsed = 00:00:52 . Memory (MB): peak = 2918.246 ; gain = 202.492 ; free physical = 6310 ; free virtual = 17232
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 2.28533 %
+  Global Horizontal Routing Utilization  = 2.97693 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Utilization threshold used for congestion level computation: 0.85
+Congestion Report
+North Dir 1x1 Area, Max Cong = 72.0721%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 83.7838%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 77.9412%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 69.1176%, No Congested Regions.
+Phase 7 Route finalize | Checksum: 1b37226f1
+
+Time (s): cpu = 00:02:12 ; elapsed = 00:00:52 . Memory (MB): peak = 2918.246 ; gain = 202.492 ; free physical = 6310 ; free virtual = 17232
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1b37226f1
+
+Time (s): cpu = 00:02:12 ; elapsed = 00:00:52 . Memory (MB): peak = 2918.246 ; gain = 202.492 ; free physical = 6309 ; free virtual = 17231
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1b9f47942
+
+Time (s): cpu = 00:02:13 ; elapsed = 00:00:53 . Memory (MB): peak = 2918.246 ; gain = 202.492 ; free physical = 6307 ; free virtual = 17229
+
+Phase 10 Post Router Timing
+
+Phase 10.1 Update Timing
+Phase 10.1 Update Timing | Checksum: 1d19c390c
+
+Time (s): cpu = 00:02:15 ; elapsed = 00:00:54 . Memory (MB): peak = 2918.246 ; gain = 202.492 ; free physical = 6309 ; free virtual = 17230
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-4.571 | TNS=-604.437| WHS=0.050  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 1d19c390c
+
+Time (s): cpu = 00:02:15 ; elapsed = 00:00:54 . Memory (MB): peak = 2918.246 ; gain = 202.492 ; free physical = 6309 ; free virtual = 17230
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:02:15 ; elapsed = 00:00:54 . Memory (MB): peak = 2918.246 ; gain = 202.492 ; free physical = 6388 ; free virtual = 17310
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+100 Infos, 65 Warnings, 62 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:02:20 ; elapsed = 00:00:57 . Memory (MB): peak = 2918.246 ; gain = 209.117 ; free physical = 6388 ; free virtual = 17310
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 2941.246 ; gain = 0.004 ; free physical = 6322 ; free virtual = 17293
+INFO: [Common 17-1381] The checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/impl_1/design_1_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2941.250 ; gain = 23.004 ; free physical = 6370 ; free virtual = 17305
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+Command: report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/impl_1/design_1_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/impl_1/design_1_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:19 ; elapsed = 00:00:06 . Memory (MB): peak = 3037.297 ; gain = 0.000 ; free physical = 6221 ; free virtual = 17157
+INFO: [runtcl-4] Executing : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+Command: report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+112 Infos, 66 Warnings, 62 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 3143.742 ; gain = 106.445 ; free physical = 6177 ; free virtual = 17128
+INFO: [runtcl-4] Executing : report_route_status -file design_1_wrapper_route_status.rpt -pb design_1_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file design_1_wrapper_timing_summary_routed.rpt -rpx design_1_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file design_1_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
+INFO: [runtcl-4] Executing : report_clock_utilization -file design_1_wrapper_clock_utilization_routed.rpt
+Command: write_bitstream -force design_1_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC BUFC-1] Input Buffer Connections: Input buffer design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dqs_iobuf_HR.gen_dqs_iobuf[0].gen_dqs_diff.u_iobuf_dqs/IBUFDS_0 has no loads. It is recommended to have an input buffer drive an internal load.
+WARNING: [DRC BUFC-1] Input Buffer Connections: Input buffer design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dqs_iobuf_HR.gen_dqs_iobuf[1].gen_dqs_diff.u_iobuf_dqs/IBUFDS_0 has no loads. It is recommended to have an input buffer drive an internal load.
+WARNING: [DRC CFGBVS-1] Missing CFGBVS and CONFIG_VOLTAGE Design Properties: Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/microblaze_i0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.FPU_MUL_I/Use_DSP48E1.dsp_module_lower/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 input design_1_i/microblaze_i0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.FPU_MUL_I/Use_DSP48E1.dsp_module_lower/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/microblaze_i0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.FPU_MUL_I/Use_DSP48E1.dsp_module_lower/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 input design_1_i/microblaze_i0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.FPU_MUL_I/Use_DSP48E1.dsp_module_lower/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/microblaze_i0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.FPU_MUL_I/Use_DSP48E1.dsp_module_upper/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 input design_1_i/microblaze_i0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.FPU_MUL_I/Use_DSP48E1.dsp_module_upper/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/microblaze_i0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.FPU_MUL_I/Use_DSP48E1.dsp_module_upper/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 input design_1_i/microblaze_i0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.FPU_MUL_I/Use_DSP48E1.dsp_module_upper/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/microblaze_i0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 input design_1_i/microblaze_i0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/microblaze_i0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 input design_1_i/microblaze_i0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/microblaze_i0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 input design_1_i/microblaze_i0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/microblaze_i0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 input design_1_i/microblaze_i0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/microblaze_i0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.FPU_MUL_I/Use_DSP48E1.dsp_module_lower/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 output design_1_i/microblaze_i0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.FPU_MUL_I/Use_DSP48E1.dsp_module_lower/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/microblaze_i0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 output design_1_i/microblaze_i0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/microblaze_i0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 multiplier stage design_1_i/microblaze_i0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC REQP-1709] Clock output buffering: PLLE2_ADV connectivity violation. The signal design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/pll_clk3_out on the design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/plle2_i/CLKOUT3 pin of design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/plle2_i does not drive the same kind of BUFFER load as the other CLKOUT pins. Routing from the different buffer types will not be phase aligned.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 15 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Thu Feb  7 17:55:19 2019. For additional details about this file, please refer to the WebTalk help file at /home/Xilinx/Vivado/2017.4/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+130 Infos, 81 Warnings, 63 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:34 ; elapsed = 00:02:26 . Memory (MB): peak = 3470.453 ; gain = 326.711 ; free physical = 6116 ; free virtual = 17082
+INFO: [Common 17-206] Exiting Vivado at Thu Feb  7 17:55:19 2019...

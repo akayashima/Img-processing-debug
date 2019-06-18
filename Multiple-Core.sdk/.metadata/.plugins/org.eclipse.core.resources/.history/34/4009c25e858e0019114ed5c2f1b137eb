@@ -1,0 +1,134 @@
+/*
+ * smooth.c
+ *
+ *  Created on: 2019/05/30
+ *      Author: akayashima
+ */
+#include "MicroBlazei0.h"
+
+
+void Smooth(int l)
+{
+	int start_once=1;
+	u32 user_i, user_j, user_l;
+	u64 tBegin=0,tStop=0;
+	int i,j,k,tmp=0;
+	u32 User=0;
+
+	unsigned char *outp = (outIMG + 54);//0x80200036
+	unsigned char *inp = (inIMG + 54);//0x80100036
+
+	Timer_Holding = 0;
+
+	Mutex_Lock(&xmutex[0],MUTEX_PRINT);
+	//GPIO = (GPIO>>31)|1;
+	GPIO = GPIO|0x00000001;
+	xil_printf("\r\n MB0 GPIO = %x",GPIO);
+	Mutex_Unlock(&xmutex[0],MUTEX_PRINT);
+
+	  /*フィルタサイズ3*3*/
+	  for(i=1;i<biWidth-1;i++){//行
+#if 0
+		  if (i%10 == 1) {
+			  Mutex_Lock(&xmutex[0],MUTEX_PRINT);//Mutex0をロック
+			  xil_printf("\r\n %d MB i%d: smooth now i=%d, j=%d", l, MY_CORE, i, j);
+			  Mutex_Unlock(&xmutex[0],MUTEX_PRINT);//Mutex0をロッ/
+		  }
+#endif
+			for(j=1;j<biHeight-1;j++){//列
+			    for(k=0;k<3;k++){//RGB
+
+			    	tBegin = Cascade_Mode(&TimerCounterInst, 0);
+
+			    	if(once!=0){
+			    		if(k==0 && j%8 == 1){
+			    			while(1){
+			    				if(Decision(l,i,j)==XST_SUCCESS)
+			    					break;
+			    			}
+			    		}
+			    	}
+#if 0
+			    	if(start_once==1) {
+			    		Mutex_GetUser(&xmutex[0],MUTEX_RECV,&User);
+			    		Disassembly(User,&user_i, &user_j, &user_l);
+			    		Mutex_Lock(&xmutex[0],MUTEX_PRINT);//Mutex0をロック
+			    		xil_printf("\r\n %d MB i%d: smooth start. i=%d, j=%d, l=%d", l, MY_CORE, user_i, user_j, user_l);
+			    		Mutex_Unlock(&xmutex[0],MUTEX_PRINT);//Mutex0をロッ/
+			    		start_once = 0;
+			    	}
+#endif
+			    	tStop = Cascade_Mode(&TimerCounterInst, 0);
+			    	UnnecessaryTime(tStop,tBegin);
+
+
+			    	tmp = *(inp+(biWidth*(i-1)*3)+3*(j-1)+k)//00
+			    		 + *(inp+(biWidth*(i-1)*3)+(3*j)+k)//01
+			    		 + *(inp+(biWidth*(i-1)*3)+3*(j+1)+k)//02
+			    		 + *(inp+(biWidth*i*3)+3*(j-1)+k)
+			    		 + *(inp+(biWidth*i*3)+(3*j)+k)
+			    		 + *(inp+(biWidth*i*3)+3*(j+1)+k)
+						 + *(inp+(biWidth*(i+1)*3)+3*(j-1)+k)
+						 + *(inp+(biWidth*(i+1)*3)+(3*j)+k)
+						 + *(inp+(biWidth*(i+1)*3)+3*(j+1)+k);
+
+			    	*(outp +(biWidth*i*3)+(3*j)+k)= tmp/9;//9画素の平均値を注目画素とする
+
+			    	if(i==1){//最初の行のピクセルをコピーする
+			    		*(outp+(biWidth*(i-1))+(j-1)+k) = *(inp+(biWidth*(i-1))+(j-1)+k);
+			    		//*(wp+(biWidth*(i-1))+(3*(j-1))+k) = *(inIMG+(biWidth*(i-1))+(3*(j-1))+k);
+			    	}
+			    	if(i==biWidth-2){//最後の行のピクセルをコピーする
+			    		*(outp+(biWidth*(i+1)*3)+(j-1)+k) = *(inp+(biWidth*(i+1)*3)+(j-1)+k);
+			    		//*(wp+(biWidth*(i+1)*3)+(3*(j-1))+k) = *(inIMG+(biWidth*(i+1)*3)+(3*(j-1))+k);
+			    	}
+			    	if(j==1){//左1列のピクセルをコピーする
+			    		*(outp+(biWidth*(i-1)*3)+(j-1)+k) = *(inp+(biWidth*(i-1)*3)+(j-1)+k);
+			    		//*(wp+(biWidth*(i-1)*3)+(3*(j-1))+k) = *(inIMG+(biWidth*(i-1)*3)+(3*(j-1))+k);
+			    	}
+			    	if(j==biHeight-2){//右1列のピクセルをコピーする
+			    		*(outp+((biWidth*i*3)-1)+(i-1)+k) = *(inp+((biWidth*i*3)-1)+(i-1)+k);
+			    		//*(wp+(biWidth*i*3)+(3*(i-1))+k) = *(inIMG+(biWidth*i*3)+(3*(i-1))+k);
+			    	}
+
+					//User = i * 100000 + j * 10 + k;//10進数上位4桁:i 中4桁:j 下位1桁:k
+
+			    	tBegin = Cascade_Mode(&TimerCounterInst, 0);
+
+			    	User = i * 1000000 + j * 1000 + l;
+					Mutex_Lock(&xmutex[0],MUTEX_SEND);//Mutex0をロック
+					Mutex_SetUser(&xmutex[0],MUTEX_SEND,User);//Mutex0に処理済みライン数をかく
+					Mutex_Unlock(&xmutex[0],MUTEX_SEND);//Mutex0のユーザレジスタをUnlock
+
+					tStop = Cascade_Mode(&TimerCounterInst, 0);
+					UnnecessaryTime(tStop,tBegin);
+
+				}
+			}
+
+	  }
+
+	  tBegin = Cascade_Mode(&TimerCounterInst, 0);
+
+		  once = 1;
+
+		  User += 2;
+		  Mutex_Lock(&xmutex[0],XPAR_MUTEX_0);
+		  Mutex_SetUser(&xmutex[0],XPAR_MUTEX_0,User);
+		  Mutex_Unlock(&xmutex[0],XPAR_MUTEX_0);
+
+		  Mutex_Lock(&xmutex[0],MUTEX_PRINT);
+		  //GPIO = (GPIO>>31)&0;
+		  GPIO = GPIO & 0x00000006;
+		  xil_printf("\r\n MB0 GPIO = %x",GPIO);
+		  Mutex_Unlock(&xmutex[0],MUTEX_PRINT);
+
+		  incrFilterComplete(l);
+#if 0
+		  xil_printf("\r\n %d MB i%d: Wid=%d, Hei=%d, i=%d, j=%d",l, MY_CORE, biWidth, biHeight , i, j);
+#endif
+
+	tStop = Cascade_Mode(&TimerCounterInst, 0);
+	UnnecessaryTime(tStop,tBegin);
+
+}

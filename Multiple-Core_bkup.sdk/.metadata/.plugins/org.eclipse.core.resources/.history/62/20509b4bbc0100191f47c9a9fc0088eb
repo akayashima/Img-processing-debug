@@ -1,0 +1,142 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <xil_printf.h>
+#include <xtmrctr.h>
+#include <xmutex.h>
+
+XTmrCtr TimerCounterInst;
+
+void Show_Time(u32, u32);
+
+u32 Mailbox_FlagRegister();
+
+int init();
+
+int main()
+{
+	u32 tStart,tEnd,Mask,Value;
+	u32 BufferTx[20];
+	u32 BufferRx[20];
+	u32 RequestedBytes=20,BytesRecvdPtr=888,BytesSentPtr=999;
+	//XMbox ConfigPtr;
+	XMutex mbox[2];
+	XMutex_Config *InsPtr[2];
+	int i=1;
+	u32 xmutex_status;
+
+	xil_printf("\r\n MB 0 Start");
+	//init();
+
+    //-- Mailbox 0
+	InsPtr[0] = XMutex_LookupConfig(XPAR_MUTEX_0_IF_0_DEVICE_ID);
+	xmutex_status = XMutex_CfgInitialize(&mbox[0], InsPtr[0], XPAR_MUTEX_0_IF_0_BASEADDR);//mailbox0 initialize
+	if(xmutex_status != XST_SUCCESS){
+		xil_printf("\r\n Mailbox Initialize Error ");
+	}
+
+	XMbox_SetSendThreshold(&mbox[0], 32);//送信FIFOの閾値設定
+	XMbox_SetReceiveThreshold(&mbox[0], 32);//受信FIFOの閾値設定
+
+	XMbox_ResetFifos(&mbox[0]);//FIFOのリセット
+
+	mbox_status = XMbox_GetStatus(&mbox[0]);
+
+	/*レジスタを調べる*/
+	return XMB_IX_STA;
+	return XMB_IX_RTA;
+	return XMB_IX_ERR;
+
+
+	mbox_status = Mailbox_GetInterruptEnable(&mbox[0]);
+	mbox_status = Mailbox_GetInterruptStatus(&mbox[0]);
+	Mailbox_ClearInterrupt(&mbox[0], XMB_IX_RTA);
+
+
+
+
+
+
+	for (i=0; i<20; i++) {
+		BufferTx[i] = i;
+		BufferRx[i] = 999;
+	}
+
+	Mailbox_WB(&mbox[0],&BufferTx[0], 80);
+
+	for(;;){
+
+	}
+
+
+
+   mbox_status = XMbox_GetStatus(&mbox[0]);
+
+
+
+	/*Status = XMbox_Read(&mbox[1],&BufferRx[0], 80, &BytesRecvdPtr);
+		if(Status != XST_SUCCESS){
+			xil_printf("\r\n Mailbox Write Error /r/n");
+		}*/
+
+
+	/*Status = XMbox_Read(&InsPtr,&BufferPtr,&RequestedBytes,&BytesRecvdPtr);//mailbox read
+	if(Status != XST_SUCCESS){//XST_NO_DATA or XST_SUCCESS
+		xil_printf("\r\n Mailbox Read Error /r/n");
+	}*/
+
+	//XMbox_ReadBlocking(&InsPtr,&BufferPtr,&RequestedBytes);
+
+	//XMbox_WriteBlocking(&InsPtr,&BufferPtr,&RequestedBytes);
+	//XMbox_IsEmpty(&InsPtr);
+	//XMbox_IsFull(&InsPtr);
+	/*Status = XMbox_Flush(&InsPtr);
+	if(Status != XST_SUCCESS){
+		xil_printf("\r\n Mailbox Flush Error /r/n");
+	}*/
+	//XMbox_ResetFifos(&InsPtr);
+	//XMbox_SetInterruptEnable(&InsPtr,&Mask);
+	//XMbox_GetInterruptEnable(&InsPtr);
+	//XMbox_GetInterruptStatus(&InsPtr);
+	//XMbox_ClearInterrupt(&InsPtr,&Mask);
+	//XMbox_SetSendThreshold(&InsPtr,&Value);
+	//XMbox_SetReceiveThreshold(&InsPtr,&Value);
+	//XMbox_GetStatus(&InsPtr);
+	//XMbox_SetSendThreshold(&InsPtr, &Value);
+
+	//tStart = XTmrCtr_GetValue(&TimerCounterInst, 0);
+
+	//tEnd = XTmrCtr_GetValue(&TimerCounterInst, 0);
+	//Show_Time(tEnd, tStart);
+
+}
+
+int init()
+{
+	int Status;
+
+	Status = XTmrCtr_Initialize(&TimerCounterInst, XPAR_AXI_TIMER_0_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		xil_printf("\r\n Timer Initialize Error \r\n");
+		return XST_FAILURE;
+	}
+	XTmrCtr_SetOptions(&TimerCounterInst, 0, XTC_AUTO_RELOAD_OPTION);
+	XTmrCtr_Start(&TimerCounterInst, 0);
+	return 0;
+}
+
+void Show_Time(u32 tEnd, u32 tStart)
+{
+	double tt = 0.0;
+	int m,b;
+	//float tt=0.0;
+
+	tt = (1.0 * (double) (tEnd - tStart) / 100000000.0);
+	//tt = (1.0 * (float)(tEnd - tStart) / 100000000.0);
+
+	m = tt;//小数点以下を切り捨ててsecとする
+	b = (tt - m) * 1000000000;//nsecまで表示
+
+	xil_printf("\r\n(MicroBlaze)\r\n");
+	xil_printf("\r\n Time=%4d.%09d[s]\r\n", m, b);
+
+}

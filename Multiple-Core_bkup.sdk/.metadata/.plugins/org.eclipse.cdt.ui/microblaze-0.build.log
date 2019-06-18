@@ -1,0 +1,17 @@
+18:35:42 **** Auto Build of configuration Debug for project microblaze-0 ****
+make all 
+Building file: ../src/MicroBlazei0.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/MicroBlazei0.o" -I../../microblaze-0_bsp/microblaze_i0/include -mlittle-endian -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/MicroBlazei0.d" -MT"src/MicroBlazei0.o" -o "src/MicroBlazei0.o" "../src/MicroBlazei0.c"
+Finished building: ../src/MicroBlazei0.c
+ 
+Building target: microblaze-0.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../microblaze-0_bsp/microblaze_i0/lib -mlittle-endian -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "microblaze-0.elf"  ./src/MicroBlazei0.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+/home/Xilinx/SDK/2017.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/6.2.0/../../../../microblaze-xilinx-elf/bin/ld: microblaze-0.elf section `.data' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+/home/Xilinx/SDK/2017.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/6.2.0/../../../../microblaze-xilinx-elf/bin/ld: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 2224 bytes
+collect2: error: ld returned 1 exit status
+make: *** [microblaze-0.elf] エラー 1
+
+18:35:42 Build Finished (took 109ms)
+

@@ -1,0 +1,769 @@
+
+*** Running vivado
+    with args -log design_1_mutex_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_mutex_0_0.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source design_1_mutex_0_0.tcl -notrace
+Command: synth_design -top design_1_mutex_0_0 -part xc7a200tsbg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7613 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1392.977 ; gain = 83.996 ; free physical = 9168 ; free virtual = 19600
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_mutex_0_0' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_mutex_0_0/synth/design_1_mutex_0_0.vhd:83]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_NUM_AXI bound to: 1 - type: integer 
+	Parameter C_S0_AXI_BASEADDR bound to: 32'b01000011010000000000000000000000 
+	Parameter C_S0_AXI_HIGHADDR bound to: 32'b01000011010000001111111111111111 
+	Parameter C_S0_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S0_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S1_AXI_BASEADDR bound to: 32'b01000011010000010000000000000000 
+	Parameter C_S1_AXI_HIGHADDR bound to: 32'b01000011010000011111111111111111 
+	Parameter C_S1_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S1_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S2_AXI_BASEADDR bound to: 32'b11111111111111111111111111111111 
+	Parameter C_S2_AXI_HIGHADDR bound to: 32'b00000000000000000000000000000000 
+	Parameter C_S2_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S2_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S3_AXI_BASEADDR bound to: 32'b11111111111111111111111111111111 
+	Parameter C_S3_AXI_HIGHADDR bound to: 32'b00000000000000000000000000000000 
+	Parameter C_S3_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S3_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S4_AXI_BASEADDR bound to: 32'b11111111111111111111111111111111 
+	Parameter C_S4_AXI_HIGHADDR bound to: 32'b00000000000000000000000000000000 
+	Parameter C_S4_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S4_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S5_AXI_BASEADDR bound to: 32'b11111111111111111111111111111111 
+	Parameter C_S5_AXI_HIGHADDR bound to: 32'b00000000000000000000000000000000 
+	Parameter C_S5_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S5_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S6_AXI_BASEADDR bound to: 32'b11111111111111111111111111111111 
+	Parameter C_S6_AXI_HIGHADDR bound to: 32'b00000000000000000000000000000000 
+	Parameter C_S6_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S6_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S7_AXI_BASEADDR bound to: 32'b11111111111111111111111111111111 
+	Parameter C_S7_AXI_HIGHADDR bound to: 32'b00000000000000000000000000000000 
+	Parameter C_S7_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S7_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ASYNC_CLKS bound to: 0 - type: integer 
+	Parameter C_NUM_SYNC_FF bound to: 2 - type: integer 
+	Parameter C_ENABLE_USER bound to: 1 - type: integer 
+	Parameter C_OWNER_ID_WIDTH bound to: 8 - type: integer 
+	Parameter C_ENABLE_HW_PROT bound to: 0 - type: integer 
+	Parameter C_NUM_MUTEX bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'mutex' declared at '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1786' bound to instance 'U0' of component 'mutex' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_mutex_0_0/synth/design_1_mutex_0_0.vhd:317]
+INFO: [Synth 8-638] synthesizing module 'mutex' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:2025]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_S0_AXI_BASEADDR bound to: 1128267776 - type: integer 
+	Parameter C_S0_AXI_HIGHADDR bound to: 1128333311 - type: integer 
+	Parameter C_S0_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S0_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S1_AXI_BASEADDR bound to: 1128333312 - type: integer 
+	Parameter C_S1_AXI_HIGHADDR bound to: 1128398847 - type: integer 
+	Parameter C_S1_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S1_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S2_AXI_BASEADDR bound to: -1 - type: integer 
+	Parameter C_S2_AXI_HIGHADDR bound to: 0 - type: integer 
+	Parameter C_S2_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S2_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S3_AXI_BASEADDR bound to: -1 - type: integer 
+	Parameter C_S3_AXI_HIGHADDR bound to: 0 - type: integer 
+	Parameter C_S3_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S3_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S4_AXI_BASEADDR bound to: -1 - type: integer 
+	Parameter C_S4_AXI_HIGHADDR bound to: 0 - type: integer 
+	Parameter C_S4_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S4_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S5_AXI_BASEADDR bound to: -1 - type: integer 
+	Parameter C_S5_AXI_HIGHADDR bound to: 0 - type: integer 
+	Parameter C_S5_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S5_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S6_AXI_BASEADDR bound to: -1 - type: integer 
+	Parameter C_S6_AXI_HIGHADDR bound to: 0 - type: integer 
+	Parameter C_S6_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S6_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S7_AXI_BASEADDR bound to: -1 - type: integer 
+	Parameter C_S7_AXI_HIGHADDR bound to: 0 - type: integer 
+	Parameter C_S7_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S7_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ASYNC_CLKS bound to: 0 - type: integer 
+	Parameter C_NUM_SYNC_FF bound to: 2 - type: integer 
+	Parameter C_NUM_AXI bound to: 1 - type: integer 
+	Parameter C_ENABLE_USER bound to: 1 - type: integer 
+	Parameter C_OWNER_ID_WIDTH bound to: 8 - type: integer 
+	Parameter C_ENABLE_HW_PROT bound to: 0 - type: integer 
+	Parameter C_NUM_MUTEX bound to: 16 - type: integer 
+	Parameter C_S_AXI_BASEADDR bound to: 1128267776 - type: integer 
+	Parameter C_S_AXI_HIGHADDR bound to: 1128333311 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ASYNC_CLKS bound to: 0 - type: integer 
+	Parameter C_NUM_SYNC_FF bound to: 2 - type: integer 
+	Parameter C_HW_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AWIDTH bound to: 12 - type: integer 
+	Parameter C_DWIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'axi_decode' declared at '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1344' bound to instance 'AXI_If_0' of component 'axi_decode' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:2215]
+INFO: [Synth 8-638] synthesizing module 'axi_decode' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1401]
+	Parameter C_S_AXI_BASEADDR bound to: 1128267776 - type: integer 
+	Parameter C_S_AXI_HIGHADDR bound to: 1128333311 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ASYNC_CLKS bound to: 0 - type: integer 
+	Parameter C_NUM_SYNC_FF bound to: 2 - type: integer 
+	Parameter C_HW_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AWIDTH bound to: 12 - type: integer 
+	Parameter C_DWIDTH bound to: 32 - type: integer 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'S_AXI_RDATA_FDRE' to cell 'FDRE' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1558]
+INFO: [Synth 8-256] done synthesizing module 'axi_decode' (1#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1401]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_NUM_INTERFACE bound to: 1 - type: integer 
+	Parameter C_ENABLE_USER bound to: 1 - type: integer 
+	Parameter C_OWNER_ID_WIDTH bound to: 8 - type: integer 
+	Parameter C_HW_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_ENABLE_HW_PROT bound to: 0 - type: integer 
+	Parameter C_NUM_MUTEX bound to: 16 - type: integer 
+	Parameter C_MUTEX_NUMBER bound to: 0 - type: integer 
+	Parameter C_AWIDTH bound to: 12 - type: integer 
+	Parameter C_REGISTER_WIDTH bound to: 8 - type: integer 
+	Parameter C_DWIDTH bound to: 32 - type: integer 
+	Parameter C_DWIDTH_USER_REG bound to: 32 - type: integer 
+	Parameter C_DWIDTH_MUTEX bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'mutex_core' declared at '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:870' bound to instance 'SingleAccess' of component 'mutex_core' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:2752]
+INFO: [Synth 8-638] synthesizing module 'mutex_core' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:911]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_NUM_INTERFACE bound to: 1 - type: integer 
+	Parameter C_ENABLE_USER bound to: 1 - type: integer 
+	Parameter C_OWNER_ID_WIDTH bound to: 8 - type: integer 
+	Parameter C_HW_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_ENABLE_HW_PROT bound to: 0 - type: integer 
+	Parameter C_NUM_MUTEX bound to: 16 - type: integer 
+	Parameter C_MUTEX_NUMBER bound to: 0 - type: integer 
+	Parameter C_AWIDTH bound to: 12 - type: integer 
+	Parameter C_REGISTER_WIDTH bound to: 8 - type: integer 
+	Parameter C_DWIDTH bound to: 32 - type: integer 
+	Parameter C_DWIDTH_USER_REG bound to: 32 - type: integer 
+	Parameter C_DWIDTH_MUTEX bound to: 1 - type: integer 
+	Parameter C_NUM_CHANNELS bound to: 16 - type: integer 
+	Parameter C_OWNER_ID_WIDTH bound to: 8 - type: integer 
+	Parameter C_AWIDTH bound to: 4 - type: integer 
+	Parameter C_DWIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multi_channel_mutex' declared at '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:657' bound to instance 'Normal_Mutex_Inst' of component 'multi_channel_mutex' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1158]
+INFO: [Synth 8-638] synthesizing module 'multi_channel_mutex' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:680]
+	Parameter C_NUM_CHANNELS bound to: 16 - type: integer 
+	Parameter C_OWNER_ID_WIDTH bound to: 8 - type: integer 
+	Parameter C_AWIDTH bound to: 4 - type: integer 
+	Parameter C_DWIDTH bound to: 1 - type: integer 
+	Parameter C_NUM_CHANNELS bound to: 16 - type: integer 
+	Parameter C_AWIDTH bound to: 4 - type: integer 
+	Parameter C_DWIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'multi_channel_register' declared at '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:465' bound to instance 'Mutex_Store' of component 'multi_channel_register' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:718]
+INFO: [Synth 8-638] synthesizing module 'multi_channel_register' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:486]
+	Parameter C_NUM_CHANNELS bound to: 16 - type: integer 
+	Parameter C_AWIDTH bound to: 4 - type: integer 
+	Parameter C_DWIDTH bound to: 9 - type: integer 
+	Parameter C_DWIDTH bound to: 9 - type: integer 
+	Parameter C_AWIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'Gen_DRAM' declared at '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:335' bound to instance 'RAM_Storage' of component 'Gen_DRAM' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:535]
+INFO: [Synth 8-638] synthesizing module 'Gen_DRAM' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:350]
+	Parameter C_DWIDTH bound to: 9 - type: integer 
+	Parameter C_AWIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Gen_DRAM' (2#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:350]
+INFO: [Synth 8-256] done synthesizing module 'multi_channel_register' (3#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:486]
+INFO: [Synth 8-256] done synthesizing module 'multi_channel_mutex' (4#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:680]
+	Parameter C_NUM_CHANNELS bound to: 16 - type: integer 
+	Parameter C_AWIDTH bound to: 4 - type: integer 
+	Parameter C_DWIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'multi_channel_register' declared at '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:465' bound to instance 'User_Reg_Inst' of component 'multi_channel_register' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1186]
+INFO: [Synth 8-638] synthesizing module 'multi_channel_register__parameterized1' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:486]
+	Parameter C_NUM_CHANNELS bound to: 16 - type: integer 
+	Parameter C_AWIDTH bound to: 4 - type: integer 
+	Parameter C_DWIDTH bound to: 32 - type: integer 
+	Parameter C_DWIDTH bound to: 32 - type: integer 
+	Parameter C_AWIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'Gen_DRAM' declared at '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:335' bound to instance 'RAM_Storage' of component 'Gen_DRAM' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:535]
+INFO: [Synth 8-638] synthesizing module 'Gen_DRAM__parameterized1' [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:350]
+	Parameter C_DWIDTH bound to: 32 - type: integer 
+	Parameter C_AWIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Gen_DRAM__parameterized1' (4#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:350]
+INFO: [Synth 8-256] done synthesizing module 'multi_channel_register__parameterized1' (4#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:486]
+INFO: [Synth 8-256] done synthesizing module 'mutex_core' (5#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:911]
+INFO: [Synth 8-256] done synthesizing module 'mutex' (6#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:2025]
+INFO: [Synth 8-256] done synthesizing module 'design_1_mutex_0_0' (7#1) [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_mutex_0_0/synth/design_1_mutex_0_0.vhd:83]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_AWADDR[31]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_AWADDR[30]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_AWADDR[29]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_AWADDR[28]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_AWADDR[27]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_AWADDR[26]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_AWADDR[25]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_AWADDR[24]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_AWADDR[23]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_AWADDR[22]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_AWADDR[21]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_AWADDR[20]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_AWADDR[19]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_AWADDR[18]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_AWADDR[17]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_AWADDR[16]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_AWADDR[15]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_AWADDR[14]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_AWADDR[13]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_AWADDR[12]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_WSTRB[3]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_WSTRB[2]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_WSTRB[1]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_WSTRB[0]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_ARADDR[31]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_ARADDR[30]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_ARADDR[29]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_ARADDR[28]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_ARADDR[27]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_ARADDR[26]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_ARADDR[25]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_ARADDR[24]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_ARADDR[23]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_ARADDR[22]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_ARADDR[21]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_ARADDR[20]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_ARADDR[19]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_ARADDR[18]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_ARADDR[17]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_ARADDR[16]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_ARADDR[15]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_ARADDR[14]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_ARADDR[13]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port S_AXI_ARADDR[12]
+WARNING: [Synth 8-3331] design axi_decode has unconnected port Mutex_Clk
+WARNING: [Synth 8-3331] design axi_decode has unconnected port Mutex_Rst
+WARNING: [Synth 8-3331] design multi_channel_register__parameterized1 has unconnected port Rst
+WARNING: [Synth 8-3331] design multi_channel_register has unconnected port Rst
+WARNING: [Synth 8-3331] design mutex_core has unconnected port Mutex_HW_Id[0]
+WARNING: [Synth 8-3331] design mutex_core has unconnected port Mutex_Addr[4]
+WARNING: [Synth 8-3331] design mutex_core has unconnected port Mutex_Addr[5]
+WARNING: [Synth 8-3331] design mutex_core has unconnected port Mutex_Addr[6]
+WARNING: [Synth 8-3331] design mutex_core has unconnected port Mutex_Addr[7]
+WARNING: [Synth 8-3331] design mutex_core has unconnected port Mutex_Addr[10]
+WARNING: [Synth 8-3331] design mutex_core has unconnected port Mutex_Addr[11]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_ACLK
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_ARESETN
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[31]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[30]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[29]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[28]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[27]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[26]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[25]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[24]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[23]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[22]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[21]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[20]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[19]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[18]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[17]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[16]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[15]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[14]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[13]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[12]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[11]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[10]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[9]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[8]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[7]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[6]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[5]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[4]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[3]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[2]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[1]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWADDR[0]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_AWVALID
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_WDATA[31]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_WDATA[30]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_WDATA[29]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_WDATA[28]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_WDATA[27]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_WDATA[26]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_WDATA[25]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_WDATA[24]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_WDATA[23]
+WARNING: [Synth 8-3331] design mutex has unconnected port S1_AXI_WDATA[22]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1435.516 ; gain = 126.535 ; free physical = 9118 ; free virtual = 19561
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1435.516 ; gain = 126.535 ; free physical = 9112 ; free virtual = 19554
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_mutex_0_0/design_1_mutex_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_mutex_0_0/design_1_mutex_0_0_ooc.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ip/design_1_mutex_0_0/design_1_mutex_0_0_ooc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_mutex_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_mutex_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/design_1_mutex_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/design_1_mutex_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1839.520 ; gain = 0.004 ; free physical = 8198 ; free virtual = 18671
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:52 . Memory (MB): peak = 1839.520 ; gain = 530.539 ; free physical = 8278 ; free virtual = 18742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:52 . Memory (MB): peak = 1839.520 ; gain = 530.539 ; free physical = 8276 ; free virtual = 18740
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/design_1_mutex_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:52 . Memory (MB): peak = 1839.520 ; gain = 530.539 ; free physical = 8275 ; free virtual = 18739
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:53 . Memory (MB): peak = 1839.520 ; gain = 530.539 ; free physical = 8251 ; free virtual = 18715
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module multi_channel_mutex 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 2     
+Module mutex_core 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module axi_decode 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element Using_AXI_0.AXI_If_0/Mutex_HW_Id_I_reg was removed.  [/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.srcs/sources_1/bd/design_1/ipshared/859e/hdl/mutex_v2_1_vh_rfs.vhd:1482]
+WARNING: [Synth 8-3332] Sequential element (Using_AXI_0.AXI_If_0/Mutex_Addr_I_reg[4]) is unused and will be removed from module mutex.
+WARNING: [Synth 8-3332] Sequential element (Using_AXI_0.AXI_If_0/Mutex_Addr_I_reg[5]) is unused and will be removed from module mutex.
+WARNING: [Synth 8-3332] Sequential element (Using_AXI_0.AXI_If_0/Mutex_Addr_I_reg[6]) is unused and will be removed from module mutex.
+WARNING: [Synth 8-3332] Sequential element (Using_AXI_0.AXI_If_0/Mutex_Addr_I_reg[7]) is unused and will be removed from module mutex.
+WARNING: [Synth 8-3332] Sequential element (Using_AXI_0.AXI_If_0/Mutex_Addr_I_reg[10]) is unused and will be removed from module mutex.
+WARNING: [Synth 8-3332] Sequential element (Using_AXI_0.AXI_If_0/Mutex_Addr_I_reg[11]) is unused and will be removed from module mutex.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:53 . Memory (MB): peak = 1839.520 ; gain = 530.539 ; free physical = 8215 ; free virtual = 18681
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+--------------------------------------------------------------------------------------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object                                                                                       | Inference | Size (Depth x Width) | Primitives      | 
++------------+--------------------------------------------------------------------------------------------------+-----------+----------------------+-----------------+
+|U0          | SingleAccess/No_HW_Protection.Normal_Mutex_Inst/Mutex_Store/Use_Multi_Ch_Reg.RAM_Storage/RAM_reg | Implied   | 16 x 9               | RAM16X1S x 9    | 
+|U0          | SingleAccess/Using_User_Reg.User_Reg_Inst/Use_Multi_Ch_Reg.RAM_Storage/RAM_reg                   | Implied   | 16 x 32              | RAM16X1S x 32   | 
++------------+--------------------------------------------------------------------------------------------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:01:05 . Memory (MB): peak = 1839.520 ; gain = 530.539 ; free physical = 7940 ; free virtual = 18407
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:01:05 . Memory (MB): peak = 1839.520 ; gain = 530.539 ; free physical = 7934 ; free virtual = 18401
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+--------------------------------------------------------------------------------------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object                                                                                       | Inference | Size (Depth x Width) | Primitives      | 
++------------+--------------------------------------------------------------------------------------------------+-----------+----------------------+-----------------+
+|U0          | SingleAccess/No_HW_Protection.Normal_Mutex_Inst/Mutex_Store/Use_Multi_Ch_Reg.RAM_Storage/RAM_reg | Implied   | 16 x 9               | RAM16X1S x 9    | 
+|U0          | SingleAccess/Using_User_Reg.User_Reg_Inst/Use_Multi_Ch_Reg.RAM_Storage/RAM_reg                   | Implied   | 16 x 32              | RAM16X1S x 32   | 
++------------+--------------------------------------------------------------------------------------------------+-----------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:01:05 . Memory (MB): peak = 1839.520 ; gain = 530.539 ; free physical = 7933 ; free virtual = 18400
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:01:06 . Memory (MB): peak = 1839.520 ; gain = 530.539 ; free physical = 7933 ; free virtual = 18400
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:01:06 . Memory (MB): peak = 1839.520 ; gain = 530.539 ; free physical = 7933 ; free virtual = 18400
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:01:06 . Memory (MB): peak = 1839.520 ; gain = 530.539 ; free physical = 7933 ; free virtual = 18400
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:01:06 . Memory (MB): peak = 1839.520 ; gain = 530.539 ; free physical = 7933 ; free virtual = 18400
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:01:06 . Memory (MB): peak = 1839.520 ; gain = 530.539 ; free physical = 7933 ; free virtual = 18400
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:01:06 . Memory (MB): peak = 1839.520 ; gain = 530.539 ; free physical = 7933 ; free virtual = 18400
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |     1|
+|2     |LUT2     |    10|
+|3     |LUT3     |    31|
+|4     |LUT4     |    13|
+|5     |LUT5     |     1|
+|6     |LUT6     |    15|
+|7     |RAM16X1S |    41|
+|8     |FDRE     |   114|
++------+---------+------+
+
+Report Instance Areas: 
++------+-------------------------------------------+---------------------------------------+------+
+|      |Instance                                   |Module                                 |Cells |
++------+-------------------------------------------+---------------------------------------+------+
+|1     |top                                        |                                       |   226|
+|2     |  U0                                       |mutex                                  |   226|
+|3     |    SingleAccess                           |mutex_core                             |   115|
+|4     |      \No_HW_Protection.Normal_Mutex_Inst  |multi_channel_mutex                    |    20|
+|5     |        Mutex_Store                        |multi_channel_register                 |    20|
+|6     |          \Use_Multi_Ch_Reg.RAM_Storage    |Gen_DRAM                               |    20|
+|7     |      \Using_User_Reg.User_Reg_Inst        |multi_channel_register__parameterized1 |    55|
+|8     |        \Use_Multi_Ch_Reg.RAM_Storage      |Gen_DRAM__parameterized1               |    55|
+|9     |    \Using_AXI_0.AXI_If_0                  |axi_decode                             |   111|
++------+-------------------------------------------+---------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:01:06 . Memory (MB): peak = 1839.520 ; gain = 530.539 ; free physical = 7933 ; free virtual = 18400
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 800 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 1839.520 ; gain = 126.535 ; free physical = 7985 ; free virtual = 18452
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:01:06 . Memory (MB): peak = 1839.520 ; gain = 530.539 ; free physical = 7985 ; free virtual = 18452
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 41 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 41 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 41 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+71 Infos, 107 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:01:07 . Memory (MB): peak = 1839.520 ; gain = 555.363 ; free physical = 7976 ; free virtual = 18443
+INFO: [Common 17-1381] The checkpoint '/home/akayashima/H30_Xilinx/ImgProcessing/Mutex-20181213/Multiple-Core.runs/design_1_mutex_0_0_synth_1/design_1_mutex_0_0.dcp' has been generated.

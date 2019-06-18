@@ -1,0 +1,14 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/akayashima/H31_Xilinx/Img-processing-sim/Multiple-Core.ip_user_files/bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_axi_gpio_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/akayashima/H31_Xilinx/Img-processing-sim/Multiple-Core.ip_user_files/bd/design_1/ip/design_1_microblaze_0_0/sim/design_1_microblaze_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_microblaze_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/akayashima/H31_Xilinx/Img-processing-sim/Multiple-Core.ip_user_files/bd/design_1/ip/design_1_axi_timer_0_0/sim/design_1_axi_timer_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_axi_timer_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/akayashima/H31_Xilinx/Img-processing-sim/Multiple-Core.ip_user_files/bd/design_1/ip/design_1_microblaze_1_0/sim/design_1_microblaze_1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_microblaze_1_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/akayashima/H31_Xilinx/Img-processing-sim/Multiple-Core.ip_user_files/bd/design_1/ip/design_1_mutex_0_0/sim/design_1_mutex_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_mutex_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/akayashima/H31_Xilinx/Img-processing-sim/Multiple-Core.ip_user_files/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_1/sim/design_1_dlmb_bram_if_cntlr_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_dlmb_bram_if_cntlr_1
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/akayashima/H31_Xilinx/Img-processing-sim/Multiple-Core.ip_user_files/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/sim/design_1_dlmb_bram_if_cntlr_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_dlmb_bram_if_cntlr_0

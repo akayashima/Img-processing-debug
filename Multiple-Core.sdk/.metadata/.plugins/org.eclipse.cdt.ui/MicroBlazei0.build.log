@@ -1,0 +1,21 @@
+18:21:13 **** Auto Build of configuration Debug for project MicroBlazei0 ****
+make all 
+Building file: ../src/smooth.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/smooth.o" -I../../MicroBlazei0_bsp/microblaze_i0/include -mlittle-endian -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/smooth.d" -MT"src/smooth.o" -o "src/smooth.o" "../src/smooth.c"
+Finished building: ../src/smooth.c
+ 
+Building target: MicroBlazei0.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MicroBlazei0_bsp/microblaze_i0/lib -mlittle-endian -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "MicroBlazei0.elf"  ./src/MicroBlazei0.o ./src/smooth.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: MicroBlazei0.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size MicroBlazei0.elf  |tee "MicroBlazei0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28092	    432	   3340	  31864	   7c78	MicroBlazei0.elf
+Finished building: MicroBlazei0.elf.size
+ 
+
+18:21:14 Build Finished (took 69ms)
+

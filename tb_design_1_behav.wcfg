@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_design_1_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="ipif_pkg" />
+            <top_module name="lib_pkg" />
+            <top_module name="lmb_bram_if_funcs" />
+            <top_module name="mdm_funcs" />
+            <top_module name="tb_design_1" />
+            <top_module name="tc_types" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="46790481905fs"></ZoomStartTime>
+      <ZoomEndTime time="51841903620fs"></ZoomEndTime>
+      <Cursor1Time time="51000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="191"></NameColumnWidth>
+      <ValueColumnWidth column_width="85"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="158" />
+   <wave_markers>
+      <marker label="" time="123185000000" />
+   </wave_markers>
+   <wvobject type="logic" fp_name="/tb_design_1/SYSCLK">
+      <obj_property name="ElementShortName">SYSCLK</obj_property>
+      <obj_property name="ObjectShortName">SYSCLK</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/CPU_RESETN">
+      <obj_property name="ElementShortName">CPU_RESETN</obj_property>
+      <obj_property name="ObjectShortName">CPU_RESETN</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/CPU_RESET">
+      <obj_property name="ElementShortName">CPU_RESET</obj_property>
+      <obj_property name="ObjectShortName">CPU_RESET</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/led">
+      <obj_property name="ElementShortName">led[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led[7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/usb_uart_rxd">
+      <obj_property name="ElementShortName">usb_uart_rxd</obj_property>
+      <obj_property name="ObjectShortName">usb_uart_rxd</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/usb_uart_txd">
+      <obj_property name="ElementShortName">usb_uart_txd</obj_property>
+      <obj_property name="ObjectShortName">usb_uart_txd</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/ui_clk">
+      <obj_property name="ElementShortName">ui_clk</obj_property>
+      <obj_property name="ObjectShortName">ui_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mdm_rst">
+      <obj_property name="ElementShortName">mdm_rst</obj_property>
+      <obj_property name="ObjectShortName">mdm_rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/mmcm_locked">
+      <obj_property name="ElementShortName">mmcm_locked</obj_property>
+      <obj_property name="ObjectShortName">mmcm_locked</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider46" type="divider">
+      <obj_property name="label">mb0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/Clk">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/Reset">
+      <obj_property name="ElementShortName">Reset</obj_property>
+      <obj_property name="ObjectShortName">Reset</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/Interrupt">
+      <obj_property name="ElementShortName">Interrupt</obj_property>
+      <obj_property name="ObjectShortName">Interrupt</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/Interrupt_Address">
+      <obj_property name="ElementShortName">Interrupt_Address[0:31]</obj_property>
+      <obj_property name="ObjectShortName">Interrupt_Address[0:31]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/Interrupt_Ack">
+      <obj_property name="ElementShortName">Interrupt_Ack[0:1]</obj_property>
+      <obj_property name="ObjectShortName">Interrupt_Ack[0:1]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/Instr_Addr">
+      <obj_property name="ElementShortName">Instr_Addr[0:31]</obj_property>
+      <obj_property name="ObjectShortName">Instr_Addr[0:31]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/Instr">
+      <obj_property name="ElementShortName">Instr[0:31]</obj_property>
+      <obj_property name="ObjectShortName">Instr[0:31]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/IFetch">
+      <obj_property name="ElementShortName">IFetch</obj_property>
+      <obj_property name="ObjectShortName">IFetch</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/I_AS">
+      <obj_property name="ElementShortName">I_AS</obj_property>
+      <obj_property name="ObjectShortName">I_AS</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/IReady">
+      <obj_property name="ElementShortName">IReady</obj_property>
+      <obj_property name="ObjectShortName">IReady</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/IWAIT">
+      <obj_property name="ElementShortName">IWAIT</obj_property>
+      <obj_property name="ObjectShortName">IWAIT</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/ICE">
+      <obj_property name="ElementShortName">ICE</obj_property>
+      <obj_property name="ObjectShortName">ICE</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/IUE">
+      <obj_property name="ElementShortName">IUE</obj_property>
+      <obj_property name="ObjectShortName">IUE</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/Data_Addr">
+      <obj_property name="ElementShortName">Data_Addr[0:31]</obj_property>
+      <obj_property name="ObjectShortName">Data_Addr[0:31]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/Data_Read">
+      <obj_property name="ElementShortName">Data_Read[0:31]</obj_property>
+      <obj_property name="ObjectShortName">Data_Read[0:31]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/Data_Write">
+      <obj_property name="ElementShortName">Data_Write[0:31]</obj_property>
+      <obj_property name="ObjectShortName">Data_Write[0:31]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/D_AS">
+      <obj_property name="ElementShortName">D_AS</obj_property>
+      <obj_property name="ObjectShortName">D_AS</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/Read_Strobe">
+      <obj_property name="ElementShortName">Read_Strobe</obj_property>
+      <obj_property name="ObjectShortName">Read_Strobe</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/Write_Strobe">
+      <obj_property name="ElementShortName">Write_Strobe</obj_property>
+      <obj_property name="ObjectShortName">Write_Strobe</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/DReady">
+      <obj_property name="ElementShortName">DReady</obj_property>
+      <obj_property name="ObjectShortName">DReady</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/DWait">
+      <obj_property name="ElementShortName">DWait</obj_property>
+      <obj_property name="ObjectShortName">DWait</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/DCE">
+      <obj_property name="ElementShortName">DCE</obj_property>
+      <obj_property name="ObjectShortName">DCE</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/DUE">
+      <obj_property name="ElementShortName">DUE</obj_property>
+      <obj_property name="ObjectShortName">DUE</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/Byte_Enable">
+      <obj_property name="ElementShortName">Byte_Enable[0:3]</obj_property>
+      <obj_property name="ObjectShortName">Byte_Enable[0:3]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/M_AXI_DP_AWADDR">
+      <obj_property name="ElementShortName">M_AXI_DP_AWADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_DP_AWADDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/M_AXI_DP_AWPROT">
+      <obj_property name="ElementShortName">M_AXI_DP_AWPROT[2:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_DP_AWPROT[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/M_AXI_DP_AWVALID">
+      <obj_property name="ElementShortName">M_AXI_DP_AWVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_DP_AWVALID</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/M_AXI_DP_AWREADY">
+      <obj_property name="ElementShortName">M_AXI_DP_AWREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_DP_AWREADY</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/M_AXI_DP_WDATA">
+      <obj_property name="ElementShortName">M_AXI_DP_WDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_DP_WDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/M_AXI_DP_WSTRB">
+      <obj_property name="ElementShortName">M_AXI_DP_WSTRB[3:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_DP_WSTRB[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/M_AXI_DP_WVALID">
+      <obj_property name="ElementShortName">M_AXI_DP_WVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_DP_WVALID</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/M_AXI_DP_WREADY">
+      <obj_property name="ElementShortName">M_AXI_DP_WREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_DP_WREADY</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/M_AXI_DP_BRESP">
+      <obj_property name="ElementShortName">M_AXI_DP_BRESP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_DP_BRESP[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/M_AXI_DP_BVALID">
+      <obj_property name="ElementShortName">M_AXI_DP_BVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_DP_BVALID</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/M_AXI_DP_BREADY">
+      <obj_property name="ElementShortName">M_AXI_DP_BREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_DP_BREADY</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/M_AXI_DP_ARADDR">
+      <obj_property name="ElementShortName">M_AXI_DP_ARADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_DP_ARADDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/M_AXI_DP_ARPROT">
+      <obj_property name="ElementShortName">M_AXI_DP_ARPROT[2:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_DP_ARPROT[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/M_AXI_DP_ARVALID">
+      <obj_property name="ElementShortName">M_AXI_DP_ARVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_DP_ARVALID</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/M_AXI_DP_ARREADY">
+      <obj_property name="ElementShortName">M_AXI_DP_ARREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_DP_ARREADY</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/M_AXI_DP_RDATA">
+      <obj_property name="ElementShortName">M_AXI_DP_RDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_DP_RDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/M_AXI_DP_RRESP">
+      <obj_property name="ElementShortName">M_AXI_DP_RRESP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_DP_RRESP[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/M_AXI_DP_RVALID">
+      <obj_property name="ElementShortName">M_AXI_DP_RVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_DP_RVALID</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/M_AXI_DP_RREADY">
+      <obj_property name="ElementShortName">M_AXI_DP_RREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_DP_RREADY</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/Dbg_Clk">
+      <obj_property name="ElementShortName">Dbg_Clk</obj_property>
+      <obj_property name="ObjectShortName">Dbg_Clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/Dbg_TDI">
+      <obj_property name="ElementShortName">Dbg_TDI</obj_property>
+      <obj_property name="ObjectShortName">Dbg_TDI</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/Dbg_TDO">
+      <obj_property name="ElementShortName">Dbg_TDO</obj_property>
+      <obj_property name="ObjectShortName">Dbg_TDO</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/Dbg_Reg_En">
+      <obj_property name="ElementShortName">Dbg_Reg_En[0:7]</obj_property>
+      <obj_property name="ObjectShortName">Dbg_Reg_En[0:7]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/Dbg_Shift">
+      <obj_property name="ElementShortName">Dbg_Shift</obj_property>
+      <obj_property name="ObjectShortName">Dbg_Shift</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/Dbg_Capture">
+      <obj_property name="ElementShortName">Dbg_Capture</obj_property>
+      <obj_property name="ObjectShortName">Dbg_Capture</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/Dbg_Update">
+      <obj_property name="ElementShortName">Dbg_Update</obj_property>
+      <obj_property name="ObjectShortName">Dbg_Update</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/Debug_Rst">
+      <obj_property name="ElementShortName">Debug_Rst</obj_property>
+      <obj_property name="ObjectShortName">Debug_Rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/microblaze_i0/Dbg_Disable">
+      <obj_property name="ElementShortName">Dbg_Disable</obj_property>
+      <obj_property name="ObjectShortName">Dbg_Disable</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider114" type="divider">
+      <obj_property name="label">mig</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/ddr3_dq">
+      <obj_property name="ElementShortName">ddr3_dq[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_dq[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/ddr3_dqs_n">
+      <obj_property name="ElementShortName">ddr3_dqs_n[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_dqs_n[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/ddr3_dqs_p">
+      <obj_property name="ElementShortName">ddr3_dqs_p[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_dqs_p[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/ddr3_addr">
+      <obj_property name="ElementShortName">ddr3_addr[14:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_addr[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/ddr3_ba">
+      <obj_property name="ElementShortName">ddr3_ba[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_ba[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/ddr3_ras_n">
+      <obj_property name="ElementShortName">ddr3_ras_n</obj_property>
+      <obj_property name="ObjectShortName">ddr3_ras_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/ddr3_cas_n">
+      <obj_property name="ElementShortName">ddr3_cas_n</obj_property>
+      <obj_property name="ObjectShortName">ddr3_cas_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/ddr3_we_n">
+      <obj_property name="ElementShortName">ddr3_we_n</obj_property>
+      <obj_property name="ObjectShortName">ddr3_we_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/ddr3_reset_n">
+      <obj_property name="ElementShortName">ddr3_reset_n</obj_property>
+      <obj_property name="ObjectShortName">ddr3_reset_n</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/ddr3_ck_p">
+      <obj_property name="ElementShortName">ddr3_ck_p[0:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_ck_p[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/ddr3_ck_n">
+      <obj_property name="ElementShortName">ddr3_ck_n[0:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_ck_n[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/ddr3_cke">
+      <obj_property name="ElementShortName">ddr3_cke[0:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_cke[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/ddr3_dm">
+      <obj_property name="ElementShortName">ddr3_dm[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_dm[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/ddr3_odt">
+      <obj_property name="ElementShortName">ddr3_odt[0:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_odt[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/sys_clk_i">
+      <obj_property name="ElementShortName">sys_clk_i</obj_property>
+      <obj_property name="ObjectShortName">sys_clk_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/clk_ref_i">
+      <obj_property name="ElementShortName">clk_ref_i</obj_property>
+      <obj_property name="ObjectShortName">clk_ref_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/ui_clk">
+      <obj_property name="ElementShortName">ui_clk</obj_property>
+      <obj_property name="ObjectShortName">ui_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/ui_clk_sync_rst">
+      <obj_property name="ElementShortName">ui_clk_sync_rst</obj_property>
+      <obj_property name="ObjectShortName">ui_clk_sync_rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/ui_addn_clk_0">
+      <obj_property name="ElementShortName">ui_addn_clk_0</obj_property>
+      <obj_property name="ObjectShortName">ui_addn_clk_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/ui_addn_clk_1">
+      <obj_property name="ElementShortName">ui_addn_clk_1</obj_property>
+      <obj_property name="ObjectShortName">ui_addn_clk_1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/ui_addn_clk_2">
+      <obj_property name="ElementShortName">ui_addn_clk_2</obj_property>
+      <obj_property name="ObjectShortName">ui_addn_clk_2</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/ui_addn_clk_3">
+      <obj_property name="ElementShortName">ui_addn_clk_3</obj_property>
+      <obj_property name="ObjectShortName">ui_addn_clk_3</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/ui_addn_clk_4">
+      <obj_property name="ElementShortName">ui_addn_clk_4</obj_property>
+      <obj_property name="ObjectShortName">ui_addn_clk_4</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/mmcm_locked">
+      <obj_property name="ElementShortName">mmcm_locked</obj_property>
+      <obj_property name="ObjectShortName">mmcm_locked</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/aresetn">
+      <obj_property name="ElementShortName">aresetn</obj_property>
+      <obj_property name="ObjectShortName">aresetn</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/app_sr_active">
+      <obj_property name="ElementShortName">app_sr_active</obj_property>
+      <obj_property name="ObjectShortName">app_sr_active</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/app_ref_ack">
+      <obj_property name="ElementShortName">app_ref_ack</obj_property>
+      <obj_property name="ObjectShortName">app_ref_ack</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/app_zq_ack">
+      <obj_property name="ElementShortName">app_zq_ack</obj_property>
+      <obj_property name="ObjectShortName">app_zq_ack</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_awid">
+      <obj_property name="ElementShortName">s_axi_awid[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awid[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_awaddr">
+      <obj_property name="ElementShortName">s_axi_awaddr[28:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awaddr[28:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_awlen">
+      <obj_property name="ElementShortName">s_axi_awlen[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awlen[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_awsize">
+      <obj_property name="ElementShortName">s_axi_awsize[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awsize[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_awburst">
+      <obj_property name="ElementShortName">s_axi_awburst[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awburst[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_awlock">
+      <obj_property name="ElementShortName">s_axi_awlock[0:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awlock[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_awcache">
+      <obj_property name="ElementShortName">s_axi_awcache[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awcache[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_awprot">
+      <obj_property name="ElementShortName">s_axi_awprot[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awprot[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_awqos">
+      <obj_property name="ElementShortName">s_axi_awqos[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awqos[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_awvalid">
+      <obj_property name="ElementShortName">s_axi_awvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_awready">
+      <obj_property name="ElementShortName">s_axi_awready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_wdata">
+      <obj_property name="ElementShortName">s_axi_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_wstrb">
+      <obj_property name="ElementShortName">s_axi_wstrb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wstrb[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_wlast">
+      <obj_property name="ElementShortName">s_axi_wlast</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wlast</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_wvalid">
+      <obj_property name="ElementShortName">s_axi_wvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_wready">
+      <obj_property name="ElementShortName">s_axi_wready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_bready">
+      <obj_property name="ElementShortName">s_axi_bready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_bready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_bid">
+      <obj_property name="ElementShortName">s_axi_bid[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_bid[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_bresp">
+      <obj_property name="ElementShortName">s_axi_bresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_bresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_bvalid">
+      <obj_property name="ElementShortName">s_axi_bvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_bvalid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_arid">
+      <obj_property name="ElementShortName">s_axi_arid[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arid[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_araddr">
+      <obj_property name="ElementShortName">s_axi_araddr[28:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_araddr[28:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_arlen">
+      <obj_property name="ElementShortName">s_axi_arlen[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arlen[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_arsize">
+      <obj_property name="ElementShortName">s_axi_arsize[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arsize[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_arburst">
+      <obj_property name="ElementShortName">s_axi_arburst[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arburst[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_arlock">
+      <obj_property name="ElementShortName">s_axi_arlock[0:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arlock[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_arcache">
+      <obj_property name="ElementShortName">s_axi_arcache[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arcache[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_arprot">
+      <obj_property name="ElementShortName">s_axi_arprot[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arprot[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_arqos">
+      <obj_property name="ElementShortName">s_axi_arqos[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arqos[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_arvalid">
+      <obj_property name="ElementShortName">s_axi_arvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_arready">
+      <obj_property name="ElementShortName">s_axi_arready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_rready">
+      <obj_property name="ElementShortName">s_axi_rready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_rid">
+      <obj_property name="ElementShortName">s_axi_rid[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rid[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_rdata">
+      <obj_property name="ElementShortName">s_axi_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_rresp">
+      <obj_property name="ElementShortName">s_axi_rresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_rlast">
+      <obj_property name="ElementShortName">s_axi_rlast</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rlast</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/s_axi_rvalid">
+      <obj_property name="ElementShortName">s_axi_rvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/init_calib_complete">
+      <obj_property name="ElementShortName">init_calib_complete</obj_property>
+      <obj_property name="ObjectShortName">init_calib_complete</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/device_temp">
+      <obj_property name="ElementShortName">device_temp[11:0]</obj_property>
+      <obj_property name="ObjectShortName">device_temp[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/mig_7series_0/sys_rst">
+      <obj_property name="ElementShortName">sys_rst</obj_property>
+      <obj_property name="ObjectShortName">sys_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider99" type="divider">
+      <obj_property name="label">dram</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/ddr3_sdram_addr">
+      <obj_property name="ElementShortName">ddr3_sdram_addr[14:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_sdram_addr[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/ddr3_sdram_ba">
+      <obj_property name="ElementShortName">ddr3_sdram_ba[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_sdram_ba[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/ddr3_sdram_cas_n">
+      <obj_property name="ElementShortName">ddr3_sdram_cas_n</obj_property>
+      <obj_property name="ObjectShortName">ddr3_sdram_cas_n</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/ddr3_sdram_ck_n">
+      <obj_property name="ElementShortName">ddr3_sdram_ck_n[0:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_sdram_ck_n[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/ddr3_sdram_ck_p">
+      <obj_property name="ElementShortName">ddr3_sdram_ck_p[0:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_sdram_ck_p[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/ddr3_sdram_cke">
+      <obj_property name="ElementShortName">ddr3_sdram_cke[0:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_sdram_cke[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/ddr3_sdram_dm">
+      <obj_property name="ElementShortName">ddr3_sdram_dm[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_sdram_dm[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/ddr3_sdram_dq">
+      <obj_property name="ElementShortName">ddr3_sdram_dq[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_sdram_dq[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/ddr3_sdram_dqs_n">
+      <obj_property name="ElementShortName">ddr3_sdram_dqs_n[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_sdram_dqs_n[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/ddr3_sdram_dqs_p">
+      <obj_property name="ElementShortName">ddr3_sdram_dqs_p[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_sdram_dqs_p[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/ddr3_sdram_odt">
+      <obj_property name="ElementShortName">ddr3_sdram_odt[0:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3_sdram_odt[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/ddr3_sdram_ras_n">
+      <obj_property name="ElementShortName">ddr3_sdram_ras_n</obj_property>
+      <obj_property name="ObjectShortName">ddr3_sdram_ras_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/ddr3_sdram_reset_n">
+      <obj_property name="ElementShortName">ddr3_sdram_reset_n</obj_property>
+      <obj_property name="ObjectShortName">ddr3_sdram_reset_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/ddr3_sdram_we_n">
+      <obj_property name="ElementShortName">ddr3_sdram_we_n</obj_property>
+      <obj_property name="ObjectShortName">ddr3_sdram_we_n</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/sdramddr3_0/memory[0]">
+      <obj_property name="ElementShortName">[0][127:0]</obj_property>
+      <obj_property name="ObjectShortName">[0][127:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/sdramddr3_0/memory[1]">
+      <obj_property name="ElementShortName">[1][127:0]</obj_property>
+      <obj_property name="ObjectShortName">[1][127:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/sdramddr3_0/memory[2]">
+      <obj_property name="ElementShortName">[2][127:0]</obj_property>
+      <obj_property name="ObjectShortName">[2][127:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/sdramddr3_0/memory[3]">
+      <obj_property name="ElementShortName">[3][127:0]</obj_property>
+      <obj_property name="ObjectShortName">[3][127:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/sdramddr3_0/memory[4]">
+      <obj_property name="ElementShortName">[4][127:0]</obj_property>
+      <obj_property name="ObjectShortName">[4][127:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/sdramddr3_0/memory[5]">
+      <obj_property name="ElementShortName">[5][127:0]</obj_property>
+      <obj_property name="ObjectShortName">[5][127:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/test_sig">
+      <obj_property name="ElementShortName">test_sig</obj_property>
+      <obj_property name="ObjectShortName">test_sig</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/axi_gpio_0/U0/gpio_io_o[0]">
+      <obj_property name="ElementShortName">[0]</obj_property>
+      <obj_property name="ObjectShortName">[0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/axi_gpio_0/U0/gpio_io_o[1]">
+      <obj_property name="ElementShortName">[1]</obj_property>
+      <obj_property name="ObjectShortName">[1]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1/dut/design_1_i/axi_gpio_0/U0/gpio_io_o[2]">
+      <obj_property name="ElementShortName">[2]</obj_property>
+      <obj_property name="ObjectShortName">[2]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_design_1/dut/design_1_i/axi_gpio_0/U0/C_GPIO_WIDTH">
+      <obj_property name="ElementShortName">C_GPIO_WIDTH</obj_property>
+      <obj_property name="ObjectShortName">C_GPIO_WIDTH</obj_property>
+      <obj_property name="Reversed">false</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1/dut/design_1_i/gpio_tri_o">
+      <obj_property name="ElementShortName">gpio_tri_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">gpio_tri_o[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>
